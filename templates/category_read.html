@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=categories>
+    <li><h2>{{ category.title_en }}</h2><br><h2>{{ category.title_pt }}</h2> | {{ category.weight }}
+    {% if session.logged_in %} <small><a href=/categories/{{category.id}}/edit>edit</a></small> {% endif %}
+  </ul>
+{% endblock %}

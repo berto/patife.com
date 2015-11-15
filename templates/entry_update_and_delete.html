@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('update_entry') }}" method=post class=add-entry>
+      <dl>
+        <input type=hidden name="id" value="{{ entry.id }}">
+        <dt>Title EN:
+        <dd><input type=text name="title" size=30 value="{{entry.title_en}}">
+        <dt>Text EN:
+        <dd><textarea name="text" rows=5 cols=40>{{entry.text_en}}</textarea>
+        <dt>Title PT:
+        <dd><input type=text name="title" size=30 value="{{entry.title_pt}}">
+        <dt>Text PT:
+        <dd><textarea name="text" rows=5 cols=40>{{entry.text_pt}}</textarea>
+        <dt>Category:
+        <dd><select name="category_id"><option value="NULL"></option>{% for category in categories %}<option {% if entry.category_id == category.id %} {{ "selected" }} {% endif%} } value="{{ category.id }}">{{ category.title_en }} | {{ category.title_pt }}</option>{% endfor %}</select>
+        <dt>Date created:
+        <dd><input type=date name="date_created" value="{{entry.date_created}}">
+        <dt>Date last updated:
+        <dd><input type=date name="date_updated" value="{{current_time}}">
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+    <form action="{{ url_for('delete_entry') }}" method=post class=add-entry>
+        <dl>
+            <input type=hidden name="id" value="{{ entry.id }}">
+            <dd><input type=submit value=Delete>
+        </dl>
+    </form>
+
+
+  {% else %}
+    <h1>403 Forbidden</h1>
+  {% endif %}
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><h2>{{ entry.title_en }}</h2>{{ entry.text_en|safe }}
+    <li><h2>{{ entry.title_pt }}</h2>{{ entry.text_pt|safe }}
+    <li>{{ entry.date_created }}{{ entry.date_updated }}
+    {% if session.logged_in %} <small><a href=/entries/{{entry.id}}/edit>edit</a></small> {% endif %}
+  {% else %}
+    <li><em>Nothing to show here</em>
+  {% endfor %}
+  </ul>
+{% endblock %}

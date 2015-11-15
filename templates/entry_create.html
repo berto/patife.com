@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+      <dl>
+        <input type=hidden name="id" value="">
+        <dt>Title EN:
+        <dd><input type=text size=30 name="title" value="">
+        <dt>Text EN:
+        <dd><textarea name="text" rows=5 cols=40></textarea>
+        <dt>Title PT:
+        <dd><input type=text size=30 name="title_pt" value="">
+        <dt>Text PT:
+        <dd><textarea name="text_pt" rows=5 cols=40></textarea>
+          <dt>Category:
+        <dd><select name="category_id"><option value="NULL"></option>{% for category in categories %}<option value="{{ category.id }}">{{ category.title_en }} | {{ category.title_pt }}</option>{% endfor %}</select>
+        <dt>Date created:
+        <dd><input type="date" name="date_created" value="{{current_time}}">
+        <dt>Date last updated:
+        <dd><input type="date" name="date_updated" value="{{current_time}}">
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+  {% else %}
+    <h1>403 Forbidden</h1>
+  {% endif %}
+{% endblock %}

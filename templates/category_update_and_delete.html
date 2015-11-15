@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block body %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('update_category') }}" method=post class=add-category>
+      <dl>
+        <input type=hidden name="id" value="{{ category.id }}">
+        <dt>Title EN:
+        <dd><input type=text name="title_en" size=30  value="{{ category.title_en }}">
+        <dt>Title PT:
+        <dd><input type=text name="title_pt" size=30  value="{{ category.title_pt }}">
+        <dt>Weight:
+        <dd><input type=number name="weight" size=20 value="{{ category.weight }}">
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+    <form action="{{ url_for('delete_category') }}" method=post class=add-category>
+        <dl>
+            <input type=hidden name="id" value="{{ category.id }}">
+            <dd><input type=submit value=Delete>
+        </dl>
+    </form>
+
+
+  {% else %}
+    <h1>403 Forbidden</h1>
+  {% endif %}
+{% endblock %}
