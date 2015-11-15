@@ -254,7 +254,7 @@ def add_category():
     db = get_db()
     cursor = db.cursor()
     # we use u before the MySQL query to denote unicode, so that we can use international characters such as "á"
-    query = u'INSERT INTO categories (title, weight) VALUES ("{}", {})'.format(unicode(request.form['title']), request.form['weight'])
+    query = u'INSERT INTO categories (title_en, title_pt, weight) VALUES ("{}","{}", {})'.format(unicode(request.form['title_en']), unicode(request.form['title_pt']), request.form['weight'])
     cursor.execute(query)
     cursor.close()
     # Commiting changes to DB
@@ -293,8 +293,8 @@ def update_category():
     if data is not None:
         # Update record, using new title and weight
         cursor = db.cursor()
-        query = u'UPDATE categories SET title="{}", weight={} WHERE id={}'.format(
-            unicode(request.form['title']), request.form['weight'], request.form['id'])
+        query = u'UPDATE categories SET title_en="{}", title_pt="{}", weight={} WHERE id={}'.format(
+            unicode(request.form['title_en']), unicode(request.form['title_pt']), request.form['weight'], request.form['id'])
         # app.logger.info(query)
         cursor.execute(query)
         # abort(500)

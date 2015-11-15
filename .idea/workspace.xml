@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc9e6b0-64a5-4de1-b020-382fb12e446b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patife.py" afterPath="$PROJECT_DIR$/patife.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/entry_update_and_delete.html" afterPath="$PROJECT_DIR$/templates/entry_update_and_delete.html" />
     </list>
     <ignored path="patife.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +19,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/patife.com$patife_com.coverage" NAME="patife.com Coverage Results" MODIFIED="1447604428176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/patife.com$patife_com.coverage" NAME="patife.com Coverage Results" MODIFIED="1447620470345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,31 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category_read_all.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/category_read_all.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="entry_read_all.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/entry_read_all.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category_create.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/category_create.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.375">
-              <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+            <state vertical-scroll-proportion="-8.125">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -80,18 +63,8 @@
       <file leaf-file-name="entry_update_and_delete.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/entry_update_and_delete.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="9" column="163" selection-start-line="9" selection-start-column="163" selection-end-line="9" selection-end-column="163" />
+            <state vertical-scroll-proportion="-8.125">
+              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -100,8 +73,8 @@
       <file leaf-file-name="patife.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/patife.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.246">
-              <caret line="153" column="19" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.752">
+              <caret line="375" column="8" selection-start-line="375" selection-start-column="8" selection-end-line="375" selection-end-column="8" />
               <folding>
                 <element signature="e#57#209#0" expanded="true" />
                 <element signature="e#958#1283#0" expanded="false" />
@@ -119,37 +92,70 @@
                 <element signature="e#7632#8013#0" expanded="false" />
                 <element signature="e#8079#8483#0" expanded="false" />
                 <element signature="e#8540#8840#0" expanded="false" />
-                <element signature="e#8915#9610#0" expanded="false" />
-                <element signature="e#9680#10103#0" expanded="false" />
-                <element signature="e#10184#11190#0" expanded="false" />
-                <element signature="e#11271#12403#0" expanded="false" />
-                <element signature="e#12469#13165#0" expanded="false" />
-                <element signature="e#13208#13436#0" expanded="false" />
-                <element signature="e#13485#13701#0" expanded="false" />
-                <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-                <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-                <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-                <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-                <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-                <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-                <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-                <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-                <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-                <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-                <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-                <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-                <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-                <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-                <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-                <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-                <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-                <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-                <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-                <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-                <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-                <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-                <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+                <element signature="e#8915#9666#0" expanded="false" />
+                <element signature="e#9736#10159#0" expanded="false" />
+                <element signature="e#10240#11302#0" expanded="false" />
+                <element signature="e#11383#12515#0" expanded="false" />
+                <element signature="e#12581#13277#0" expanded="false" />
+                <element signature="e#13320#13548#0" expanded="false" />
+                <element signature="e#13597#13813#0" expanded="false" />
+                <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+                <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+                <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+                <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+                <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+                <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+                <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+                <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+                <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+                <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+                <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+                <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+                <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+                <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+                <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+                <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+                <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+                <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+                <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+                <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+                <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+                <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+                <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-1.5517242">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_create.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/category_create.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.75">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +173,7 @@
       <file leaf-file-name="category_read.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/category_read.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
               <folding />
             </state>
@@ -197,6 +203,7 @@
         <option value="$PROJECT_DIR$/templates/entry_create.html" />
         <option value="$PROJECT_DIR$/templates/entry_read.html" />
         <option value="$PROJECT_DIR$/templates/entry_read_all.html" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/entry_update_and_delete.html" />
         <option value="$PROJECT_DIR$/patife.py" />
       </list>
@@ -544,7 +551,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -572,19 +579,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/entry_read_all.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -597,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -622,36 +620,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -684,7 +682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,7 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,36 +721,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -779,7 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -812,36 +807,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -874,7 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -907,36 +901,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -969,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,36 +995,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1056,7 +1049,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1096,36 +1088,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1151,36 +1143,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>
@@ -1206,19 +1198,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32608697">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1226,38 +1209,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/category_create.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.375">
-          <caret line="7" column="51" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/category_read_all.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="163" selection-start-line="9" selection-start-column="163" selection-end-line="9" selection-end-column="163" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5517242">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/category_read.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="79" selection-start-line="3" selection-start-column="79" selection-end-line="3" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/category_update_and_delete.html">
+    <entry file="file://$PROJECT_DIR$/static/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875">
-          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1280,32 +1273,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/entry_read_all.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/category_update_and_delete.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875">
+          <caret line="11" column="82" selection-start-line="11" selection-start-column="82" selection-end-line="11" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/entry_update_and_delete.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout.html">
+    <entry file="file://$PROJECT_DIR$/templates/category_create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="163" selection-start-line="9" selection-start-column="163" selection-end-line="9" selection-end-column="163" />
+        <state vertical-scroll-proportion="-3.75">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patife.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.246">
-          <caret line="153" column="19" selection-start-line="153" selection-start-column="19" selection-end-line="153" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.752">
+          <caret line="375" column="8" selection-start-line="375" selection-start-column="8" selection-end-line="375" selection-end-column="8" />
           <folding>
             <element signature="e#57#209#0" expanded="true" />
             <element signature="e#958#1283#0" expanded="false" />
@@ -1323,36 +1324,36 @@
             <element signature="e#7632#8013#0" expanded="false" />
             <element signature="e#8079#8483#0" expanded="false" />
             <element signature="e#8540#8840#0" expanded="false" />
-            <element signature="e#8915#9610#0" expanded="false" />
-            <element signature="e#9680#10103#0" expanded="false" />
-            <element signature="e#10184#11190#0" expanded="false" />
-            <element signature="e#11271#12403#0" expanded="false" />
-            <element signature="e#12469#13165#0" expanded="false" />
-            <element signature="e#13208#13436#0" expanded="false" />
-            <element signature="e#13485#13701#0" expanded="false" />
-            <marker date="1447617178000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
-            <marker date="1447617178000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
-            <marker date="1447617178000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="5930:6071" placeholder="update entri..." />
-            <marker date="1447617178000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
-            <marker date="1447617178000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
-            <marker date="1447617178000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
-            <marker date="1447617178000" expanded="true" signature="9253:9309" placeholder="INSERT INTO entries..." />
-            <marker date="1447617178000" expanded="true" signature="9869:9906" placeholder="SELECT * FRO..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10402:10440" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="10727:10782" placeholder="UPDATE entri..." />
-            <marker date="1447617178000" expanded="true" signature="11489:11527" placeholder="SELECT id FR..entries..." />
-            <marker date="1447617178000" expanded="true" signature="11785:11819" placeholder="DELETE FROM ..." />
-            <marker date="1447617178000" expanded="true" signature="12064:12120" placeholder="DELETE FROM ..." />
+            <element signature="e#8915#9666#0" expanded="false" />
+            <element signature="e#9736#10159#0" expanded="false" />
+            <element signature="e#10240#11302#0" expanded="false" />
+            <element signature="e#11383#12515#0" expanded="false" />
+            <element signature="e#12581#13277#0" expanded="false" />
+            <element signature="e#13320#13548#0" expanded="false" />
+            <element signature="e#13597#13813#0" expanded="false" />
+            <marker date="1447620453000" expanded="true" signature="2266:2314" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="2369:2414" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="2902:2936" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="3199:3244" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="4020:4167" placeholder="insert into ..." />
+            <marker date="1447620453000" expanded="true" signature="4900:4934" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5041" placeholder="select * fro..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5049" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5016:5061" placeholder="select * fro..categories..." />
+            <marker date="1447620453000" expanded="true" signature="5610:5645" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="5930:6071" placeholder="update entri..." />
+            <marker date="1447620453000" expanded="true" signature="6949:6984" placeholder="select id fr..entries..." />
+            <marker date="1447620453000" expanded="true" signature="7268:7299" placeholder="delete from ..." />
+            <marker date="1447620453000" expanded="true" signature="7734:7779" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="8262:8299" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="8580:8625" placeholder="SELECT * FRO..categories..." />
+            <marker date="1447620453000" expanded="true" signature="9253:9327" placeholder="INSERT INTO entries..." />
+            <marker date="1447620453000" expanded="true" signature="9925:9962" placeholder="SELECT * FRO..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10458:10496" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="10783:10856" placeholder="UPDATE entri..." />
+            <marker date="1447620453000" expanded="true" signature="11601:11639" placeholder="SELECT id FR..entries..." />
+            <marker date="1447620453000" expanded="true" signature="11897:11931" placeholder="DELETE FROM ..." />
+            <marker date="1447620453000" expanded="true" signature="12176:12232" placeholder="DELETE FROM ..." />
           </folding>
         </state>
       </provider>

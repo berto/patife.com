@@ -5,13 +5,13 @@
       <dl>
         <input type=hidden name="id" value="{{ entry.id }}">
         <dt>Title EN:
-        <dd><input type=text name="title" size=30 value="{{entry.title_en}}">
+        <dd><input type=text name="title_en" size=30 value="{{entry.title_en}}">
         <dt>Text EN:
-        <dd><textarea name="text" rows=5 cols=40>{{entry.text_en}}</textarea>
+        <dd><textarea name="text_en" rows=5 cols=40>{{entry.text_en}}</textarea>
         <dt>Title PT:
-        <dd><input type=text name="title" size=30 value="{{entry.title_pt}}">
+        <dd><input type=text name="title_pt" size=30 value="{{entry.title_pt}}">
         <dt>Text PT:
-        <dd><textarea name="text" rows=5 cols=40>{{entry.text_pt}}</textarea>
+        <dd><textarea name="text_pt" rows=5 cols=40>{{entry.text_pt}}</textarea>
         <dt>Category:
         <dd><select name="category_id"><option value="NULL"></option>{% for category in categories %}<option {% if entry.category_id == category.id %} {{ "selected" }} {% endif%} } value="{{ category.id }}">{{ category.title_en }} | {{ category.title_pt }}</option>{% endfor %}</select>
         <dt>Date created:
