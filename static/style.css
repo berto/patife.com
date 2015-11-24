@@ -1,20 +1,44 @@
-body                { }
-a                   { }
-h1, h2              { margin: 0; }
-h1                  { border-bottom: 2px solid #eee; }
-h2                  { font-size: 1 em; }
-p                   { color: #10121A}
-.page               { margin: 2em auto; width: 35em; border: 5px solid #ccc; padding: 1em; }
-.entries            { list-style: none; margin: 1em; padding: 0; }
-.entries li         { }
-.entries li h2      { margin-left: 1em; }
-.add-entry          { font-size: 1em; border-bottom: 1px solid #ccc; }
-.add-entry dl       { font-weight: bold; }
-.categories         { list-style: none; margin: 0; padding: 0; }
-.categories li      { margin: 1em 1em; }
-.categories li h2   { margin-left: 1em; }
-.add-category       { font-size: 1em; border-bottom: 1px solid #ccc; }
-.add-category dl    { font-weight: bold; }
-.metanav            { text-align: right; font-size: 1em; padding: 0.3em; margin-bottom: 1em; background: #fafafa; }
-.flash              { background: #CEE5F5; padding: 0.5em; border: 1px solid #AACBE2; }
-.error              { background: #F0D6D6; padding: 0.5em; }
+/* Obsessive compulsive behaviour: Nobody touch the borders! */
+body {
+    margin: 20px 20px 20px 20px;
+}
+/* This is an ID because we only use it once and specifically*/
+#header {
+    width: 100%;
+    z-index: 1;
+}
+
+/* This is a class because it will be used multiple times (2) */
+.column {
+    display: inline-block;
+}
+
+#entries {
+    float: left;
+    width: 80%;
+}
+
+.entry {
+    display: block;
+}
+
+.en {
+    float: left;
+    width: 50%;
+
+}
+
+.pt {
+    float: right;
+    width: 50%;
+}
+
+#navigation {
+    float: right;
+    background-color: lightgrey;
+    width: 20%
+}
+
+.meta {
+    float: right;
+}

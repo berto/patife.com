@@ -382,6 +382,11 @@ def config_db():
     return redirect(url_for('home_view'))
 
 
+@app.route('/test')
+def test_css():
+    #test CSS
+    return render_template('CSSplayground.html')
+
 if __name__ == '__main__':
     # un-comment the init_db below if you want to start without any db setup.
     # init_db()
