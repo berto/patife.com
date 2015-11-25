@@ -1,17 +1,19 @@
 <!doctype html>
-<head><title>Patife</title></head>
+<head><title><title>Patife</title></head>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
-  <h1>Patife</h1>
-  <div class=metanav>
-  {% if not session.logged_in %}
-    <a href="{{ url_for('login') }}">Log in</a>
-  {% else %}
-    <a href="{{ url_for('logout') }}">Log out</a> | <a href="{{ url_for('new_entry') }}">New Entry </a> | <a href="{{ url_for('view_categories') }}">Categories</a>
-  {% endif %}
-  </div>
-  {% for message in get_flashed_messages() %}
-    <div class=flash>{{ message }}</div>
-  {% endfor %}
+    <div id="header">
+        <div id="title"><a href="{{ url_for('view_entries') }}">Patife</a></div>
+        <div id="meta">
+            {% if not session.logged_in %}
+                <a href="{{ url_for('login') }}">Log in</a>
+            {% else %}
+                <a href="{{ url_for('logout') }}">Log out</a> | <a href="{{ url_for('new_entry') }}">New Entry </a> | <a href="{{ url_for('view_categories') }}">Categories</a>
+            {% endif %}
+        </div>
+    </div>
+    {% for message in get_flashed_messages() %}
+        <div class=flash>{{ message }}</div>
+    {% endfor %}
   {% block body %}{% endblock %}
 </div>

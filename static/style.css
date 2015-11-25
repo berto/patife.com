@@ -1,11 +1,26 @@
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
-body {
+.page {
+    font-size: 100%;
     margin: 20px 20px 20px 20px;
 }
+
+/* MAIN STRUCTURE */
 /* This is an ID because we only use it once and specifically*/
 #header {
     width: 100%;
     z-index: 1;
+    display: inline-block;
+}
+
+#title {
+    float: left;
+    font-size: 1.5em;
+}
+
+/* inside the header */
+#meta {
+    float: right;
+    font-size: 1em;
 }
 
 /* This is a class because it will be used multiple times (2) */
@@ -13,32 +28,68 @@ body {
     display: inline-block;
 }
 
+/* first column */
 #entries {
     float: left;
     width: 80%;
 }
 
+/* second column */
+#navigation {
+    float: right;
+    background-color: lightgrey;
+    width: 20%;
+    text-align: left;
+}
+
+/* ENTRIES */
 .entry {
     display: block;
+    margin-bottom: 20px;
+}
+
+.entry_title{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.entry_body{
+    font-size: 1em;
 }
 
 .en {
     float: left;
     width: 50%;
-
+    color: rgb(38,38,38);
 }
 
 .pt {
     float: right;
     width: 50%;
+    color: rgb(38,38,38);
+    font-style: italic;
+
 }
 
-#navigation {
-    float: right;
-    background-color: lightgrey;
-    width: 20%
+.entry_footer{
+
 }
 
-.meta {
-    float: right;
+/* TEXT */
+
+#title a {
+    color: rgb(38, 38, 38);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    text-decoration: underline;
+    color: blue;
 }
