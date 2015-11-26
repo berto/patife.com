@@ -2,6 +2,7 @@
 .page {
     font-size: 100%;
     margin: 20px 20px 20px 20px;
+    line-height: 1.3rem;
 }
 
 /* MAIN STRUCTURE */
@@ -14,13 +15,13 @@
 
 #title {
     float: left;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 /* inside the header */
 #meta {
     float: right;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* This is a class because it will be used multiple times (2) */
@@ -37,7 +38,7 @@
 /* second column */
 #navigation {
     float: right;
-    background-color: lightgrey;
+    background-color: beige;
     width: 20%;
     text-align: left;
 }
@@ -49,18 +50,19 @@
 }
 
 .entry_title{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .entry_body{
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .en {
     float: left;
     width: 50%;
     color: rgb(38,38,38);
+    text-align: justify;
 }
 
 .pt {
@@ -68,11 +70,16 @@
     width: 50%;
     color: rgb(38,38,38);
     font-style: italic;
+    text-align: justify;
+}
 
+.entry_category{
 }
 
 .entry_footer{
-
+    width: 100%;
+    clear: both;
+    color: lightgrey;
 }
 
 /* TEXT */
@@ -92,4 +99,8 @@ a:hover{
 a:visited{
     text-decoration: underline;
     color: blue;
+}
+
+.flash{
+    color: red;
 }

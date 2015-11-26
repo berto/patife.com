@@ -1,9 +1,9 @@
 <!doctype html>
-<head><title><title>Patife</title></head>
+<head><title>Patife.com</title></head>
 <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 <div class=page>
     <div id="header">
-        <div id="title"><a href="{{ url_for('view_entries') }}">Patife</a></div>
+        <div id="title"><a href="{{ url_for('view_entries') }}">Patife.com</a></div>
         <div id="meta">
             {% if not session.logged_in %}
                 <a href="{{ url_for('login') }}">Log in</a>
@@ -12,8 +12,12 @@
             {% endif %}
         </div>
     </div>
-    {% for message in get_flashed_messages() %}
-        <div class=flash>{{ message }}</div>
-    {% endfor %}
-  {% block body %}{% endblock %}
+    {% block body %}{% endblock %}
+    <div class="column" id="navigation">
+        {% for message in get_flashed_messages() %}
+            <div class=flash>{{ message }}</div>
+        {% endfor %}
+        <div class="en"><div class="entry_body"><a href="{{ url_for('view_categories') }}">Categories</a></div></div>
+        <div class="pt"><div class="entry_body"><a href="{{ url_for('view_categories') }}">Categorias</a></div></div>
+    </div>
 </div>

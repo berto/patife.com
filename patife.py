@@ -3,7 +3,7 @@
     Patife.com website
 
 """
-
+from __builtin__ import unicode
 from flask import Flask, request, session, redirect, url_for, abort, \
     render_template, flash, _app_ctx_stack  # Import Flask libraries and features
 from flaskext.mysql import MySQL
@@ -189,7 +189,7 @@ def delete_entry():
     # Getting cursor and search, if we have record with this ID
     db = get_db()
     cursor = db.cursor()
-    query = 'SELECT id FROM entries WHERE id={0}'.format(request.form['id'])
+    query = "SELECT id FROM entries WHERE id={0}".format(request.form['id'])
     cursor.execute(query)
     data = cursor.fetchone()
     cursor.close()

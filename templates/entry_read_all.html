@@ -6,16 +6,27 @@
                 <div class="en">
                     <div class="entry_title">{{ entry.title_en }}</div>
                     <div class="entry_body">{{ entry.text_en|safe }}</div>
+                    <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category_id}}</a></div>
                 </div>
                 <div class="pt">
                     <div class="entry_title">{{ entry.title_pt }}</div>
                     <div class="entry_body">{{ entry.text_pt|safe }}</div>
+                    <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category_id}}</a></div>
                 </div>
-    <li>{{ entry.date_created }}{{ entry.date_updated }}
-    {% if session.logged_in %} <small><a href=/entries/{{entry.id}}/edit>edit</a></small> {% endif %}
-  </div>
+                <div class="entry_footer">
+                    {{ entry.date_created }} - {{ entry.date_updated }}
+                    {% if session.logged_in %} <a href=/entries/{{entry.id}}/edit>Edit</a>{% endif %}
+                </div>
+            </div>
         {% else %}
-    <li><em>Nothing to show here</em>
-  {% endfor %}
+            <div class="entry">
+                <div class="en">
+                    <div class="entry_title">Nothing to show here</div>
+                </div>
+                <div class="pt">
+                    <div class="entry_title">Nada a mostrar</div>
+                </div>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
