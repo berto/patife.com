@@ -82,6 +82,23 @@
     color: lightgrey;
 }
 
+/* FORMS */
+.form_title{
+    float: left;
+    width: 100%;
+}
+
+.form_field{
+    float: left;
+    width: 100%;
+}
+
+.form_input_big{
+    width: 80%;
+    height: 10rem;
+}
+
+
 /* TEXT */
 
 #title a {
