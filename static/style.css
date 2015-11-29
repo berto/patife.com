@@ -26,6 +26,7 @@
 
 /* This is a class because it will be used multiple times (2) */
 .column {
+    margin-top: 15px;
     display: inline-block;
 }
 

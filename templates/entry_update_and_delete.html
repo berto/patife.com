@@ -2,7 +2,7 @@
 {% block body %}
     {% if session.logged_in %}
         <div class="column" id="entries">
-            <form action="{{ url_for('update_entry') }}" method=post class=add-entry>
+            <form action="{{ url_for('update_entry') }}" method=post>
                 <input type=hidden name="id" value="{{ entry.id }}">
                 <div class="entry">
                     <div class="en">
@@ -11,7 +11,7 @@
                             <div class="form_field"><input type=text name="title_en" size=30 value="{{entry.title_en}}"></div></div>
                         <div class="entry_body">
                             <div class="form_title">Text</div>
-                            <div class="form_field"><textarea name="text_en" rows=5 cols=30>{{entry.text_en}}</textarea></div></div>
+                            <div class="form_field"><textarea name="text_en" class="form_input_big">{{entry.text_en}}</textarea></div></div>
                         <div class="entry_category">
                             <div class="form_title">Category</div>
                             <div class="form_field">
@@ -44,7 +44,7 @@
                 </div>
                 <input type=submit value=Save>
             </form>
-            <form action="{{ url_for('delete_entry') }}" method=post class=add-entry>
+            <form action="{{ url_for('delete_entry') }}" method=post>
                 <input type=hidden name="id" value="{{ entry.id }}">
                 <input type=submit value=Delete>
             </form>
