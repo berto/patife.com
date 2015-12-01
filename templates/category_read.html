@@ -1,7 +1,30 @@
 {% extends "layout.html" %}
 {% block body %}
-  <ul class=categories>
-    <li><h2>{{ category.title_en }}</h2><br><h2>{{ category.title_pt }}</h2> | {{ category.weight }}
-    {% if session.logged_in %} <small><a href=/categories/{{category.id}}/edit>edit</a></small> {% endif %}
-  </ul>
+    <div class="column" id="entries">
+        <div class="entry">
+            <div class="en">
+                <div class="entry_title">{{ category.title_en }}</div>
+                <div class="entry_body">
+                    <ul>
+                        <li>post</li>
+                        <li>post</li>
+                        <li>post</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt">
+                <div class="entry_title">{{ category.title_pt }}</div>
+                <div class="entry_body">
+                    <ul>
+                        <li>post</li>
+                        <li>post</li>
+                        <li>post</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="entry_footer">
+                {% if session.logged_in %}<a href=/categories/{{category.id}}/edit>edit</a>{% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}

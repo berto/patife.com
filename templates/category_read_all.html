@@ -1,11 +1,41 @@
 {% extends "layout.html" %}
 {% block body %}
-  <ul class=categories>
-  {% for category in categories %}
-    <li><h2>{{ category.title_en }}</h2> | <h2>{{ category.title_pt }}</h2> | {{ category.weight }}
-    {% if session.logged_in %} <small><a href=/categories/{{category.id}}/edit>edit</a></small> {% endif %}
-  {% else %}
-    <li><em>Nothing to show here</em>
-  {% endfor %}
-  </ul>
+    <div class="column" id="entries">
+        {% for category in categories %}
+            <div class="entry">
+                <div class="en">
+                    <div class="entry_title">{{ category.title_en }}</div>
+                    <div class="entry_body">
+                        <ul>
+                            <li>post</li>
+                            <li>post</li>
+                            <li>post</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt">
+                    <div class="entry_title">{{ category.title_pt }}</div>
+                    <div class="entry_body">
+                        <ul>
+                            <li>post</li>
+                            <li>post</li>
+                            <li>post</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="entry_footer">
+                    {% if session.logged_in %}<a href=/categories/{{category.id}}/edit>edit</a>{% endif %}
+                </div>
+            </div>
+        {% else %}
+            <div class="entry">
+                <div class="en">
+                    <div class="entry_title">Nothing to show here</div>
+                </div>
+                <div class="pt">
+                    <div class="entry_title">Nada a mostrar</div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}

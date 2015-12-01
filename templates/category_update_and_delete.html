@@ -1,27 +1,41 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if session.logged_in %}
-    <form action="{{ url_for('update_category') }}" method=post class=add-category>
-      <dl>
-        <input type=hidden name="id" value="{{ category.id }}">
-        <dt>Title EN:
-        <dd><input type=text name="title_en" size=30  value="{{ category.title_en }}">
-        <dt>Title PT:
-        <dd><input type=text name="title_pt" size=30  value="{{ category.title_pt }}">
-        <dt>Weight:
-        <dd><input type=number name="weight" size=20 value="{{ category.weight }}">
-        <dd><input type=submit value=Share>
-      </dl>
-    </form>
-    <form action="{{ url_for('delete_category') }}" method=post class=add-category>
-        <dl>
-            <input type=hidden name="id" value="{{ category.id }}">
-            <dd><input type=submit value=Delete>
-        </dl>
-    </form>
-
-
-  {% else %}
-    <h1>403 Forbidden</h1>
-  {% endif %}
+    {% if session.logged_in %}
+        <div class="column" id="entries">
+            <form action="{{ url_for('update_category') }}" method=post>
+                <input type=hidden name="id" value="{{ category.id }}">
+                <div class="entry">
+                    <div class="en">
+                        <div class="entry_title">
+                            <div class="form_title">Title</div>
+                            <div class="form_field"><input type=text name="title_en" size=30 value="{{ category.title_en }}"></div>
+                        </div>
+                        <div class="entry_body">
+                            <div class="form_title">Weight</div>
+                            <div class="form_field"><input type=number name="weight" value="{{ category.weight }}"></div>
+                        </div>
+                    </div>
+                    <div class="pt">
+                        <div class="entry_title">
+                            <div class="form_title">Título</div>
+                            <div class="form_field"><input type=text name="title_pt" size=30 value="{{ category.title_pt }}"></div>
+                        </div>
+                        <div class="entry_body">
+                            <div class="form_title">Peso</div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <div class="form_button"><input type=submit value=Save></div>
+                    </div>
+                </div>
+            </form>
+            <form action="{{ url_for('delete_category') }}" method=post>
+                <input type=hidden name="id" value="{{ category.id }}">
+                <input type=submit value=Delete>
+            </form>
+        </div>
+    {% else %}
+        <h1>403 Forbidden</h1>
+    {% endif %}
 {% endblock %}
+

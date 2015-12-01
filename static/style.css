@@ -99,7 +99,10 @@
     height: 10rem;
 }
 
-
+.form_button{
+    display: block;
+    align:left;
+}
 /* TEXT */
 
 #title a {

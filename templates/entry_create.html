@@ -1,17 +1,19 @@
 {% extends "layout.html" %}
 {% block body %}
   {% if session.logged_in %}
-            <div class="column" id="entries">
+      <div class="column" id="entries">
             <form action="{{ url_for('add_entry') }}" method=post>
                 <input type=hidden name="id" value="">
                 <div class="entry">
                     <div class="en">
                         <div class="entry_title">
                             <div class="form_title">Title</div>
-                            <div class="form_field"><input type=text name="title_en" size=30 value=""></div></div>
+                            <div class="form_field"><input type=text name="title_en" size=30 value=""></div>
+                        </div>
                         <div class="entry_body">
                             <div class="form_title">Text</div>
-                            <div class="form_field"><textarea name="text_en" class="form_input_big"></textarea></div></div>
+                            <div class="form_field"><textarea name="text_en" class="form_input_big"></textarea></div>
+                        </div>
                         <div class="entry_category">
                             <div class="form_title">Category</div>
                             <div class="form_field">
@@ -42,9 +44,9 @@
                         <div class="form_field"><input type=date name="date_updated" value="{{ current_time }}"></div>
                     </div>
                 </div>
-                <input type=submit value=Share>
+                <input class="form_button" type=submit value=Share>
             </form>
-        </div>
+      </div>
   {% else %}
     <h1>403 Forbidden</h1>
   {% endif %}

@@ -1,19 +1,37 @@
 {% extends "layout.html" %}
 {% block body %}
-  {% if session.logged_in %}
-    <form action="{{ url_for('add_category') }}" method=post class=add-category>
-      <dl>
-        <input type=hidden name="id" value="">
-        <dt>Title EN:
-        <dd><input type=text size=30 name="title_en" value="">
-        <dt>Title PT:
-        <dd><input type=text size=30 name="title_pt" value="">
-        <dt>Weight:
-        <dd><input type=number size=20 name="weight" value="0">
-          <dd><input type=submit value=Share>
-      </dl>
-    </form>
-  {% else %}
-    <h1>403 Forbidden</h1>
-  {% endif %}
+    {% if session.logged_in %}
+        <div class="column" id="entries">
+            <form action="{{ url_for('add_category') }}" method=post>
+                <input type=hidden name="id" value="">
+                <div class="entry">
+                    <div class="en">
+                        <div class="entry_title">
+                            <div class="form_title">Title</div>
+                            <div class="form_field"><input type=text name="title_en" size=30 value=""></div>
+                        </div>
+                        <div class="entry_body">
+                            <div class="form_title">Weight</div>
+                            <div class="form_field"><input type=number name="weight" value="0"></div>
+                        </div>
+                    </div>
+                    <div class="pt">
+                        <div class="entry_title">
+                            <div class="form_title">Título</div>
+                            <div class="form_field"><input type=text name="title_pt" size=30 value=""></div>
+                        </div>
+                        <div class="entry_body">
+                            <div class="form_title">Peso</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_button">
+                    <input type=submit value=Save>
+                </div>
+            </form>
+        </div>
+    {% else %}
+        <h1>403 Forbidden</h1>
+    {% endif %}
 {% endblock %}
+
