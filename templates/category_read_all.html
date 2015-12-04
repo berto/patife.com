@@ -7,9 +7,9 @@
                     <div class="entry_title">{{ category.title_en }}</div>
                     <div class="entry_body">
                         <ul>
-                            <li>post</li>
-                            <li>post</li>
-                            <li>post</li>
+                            {% for entry in category.entries %}
+                                <li>{{ entry.title_en }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -17,9 +17,9 @@
                     <div class="entry_title">{{ category.title_pt }}</div>
                     <div class="entry_body">
                         <ul>
-                            <li>post</li>
-                            <li>post</li>
-                            <li>post</li>
+                            {% for entry in category.entries %}
+                                <li>{{ entry.title_pt }}</li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
