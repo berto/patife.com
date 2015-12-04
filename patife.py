@@ -6,21 +6,12 @@
 from __builtin__ import unicode
 from datetime import date
 
-from flask import (
-    Flask,
-    request,
-    session,
-    redirect,
-    url_for,
-    abort,
-    render_template,
-    flash
-)
+from flask import (Flask,request,session,redirect,url_for,abort,render_template,flash)
 from flask_sqlalchemy import SQLAlchemy
 
 
 # Configuration for our Flask application
-DEBUG = True
+DEBUG = False
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
@@ -38,7 +29,7 @@ db = SQLAlchemy(app)
 
 class Category(db.Model):
     """
-    This is blog entry's category
+    This is a category
     """
     __tablename__ = 'categories'
 
@@ -52,13 +43,14 @@ class Category(db.Model):
         self.title_pt = title_pt
         self.weight = weight
 
+    # returbs representation of itself
     def __repr__(self):
         return '<Category {}({})>'.format(self.title_en, self.title_pt)
 
 
 class Entry(db.Model):
     """
-    This is blog entry
+    This is an entry
     """
     __tablename__ = 'entries'
 
@@ -71,11 +63,9 @@ class Entry(db.Model):
     date_updated = db.Column(db.Date, nullable=False, default=date.today, onupdate=date.today)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
 
-    category = db.relationship('Category',
-                               backref=db.backref('entries', lazy='dynamic'))
+    category = db.relationship('Category', backref=db.backref('entries', lazy='dynamic'))
 
-    def __init__(self, title_en, title_pt, text_en, text_pt, category_id=None,
-                 date_created=None, date_updated=None):
+    def __init__(self, title_en, title_pt, text_en, text_pt, category_id=None, date_created=None, date_updated=None):
         self.title_en = title_en
         self.title_pt = title_pt
         self.text_en = text_en

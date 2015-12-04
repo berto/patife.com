@@ -1,4 +1,3 @@
 # patife.com
 
-Readme coiso
-2
+A simple blog app for Patife.com
