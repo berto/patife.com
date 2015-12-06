@@ -61,14 +61,15 @@
 
 .en {
     float: left;
-    width: 50%;
+    width: calc(50% - 10px);
+    margin-right: 20px;
     color: rgb(38,38,38);
     text-align: justify;
 }
 
 .pt {
     float: right;
-    width: 50%;
+    width: calc(50% - 10px);
     color: rgb(38,38,38);
     font-style: italic;
     text-align: justify;
