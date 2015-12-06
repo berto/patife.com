@@ -3,20 +3,22 @@
     Patife.com website
 
 """
-from __builtin__ import unicode
 from datetime import date
 
-from flask import (Flask,request,session,redirect,url_for,abort,render_template,flash)
+from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash)
 from flask_sqlalchemy import SQLAlchemy
 
 
 # Configuration for our Flask application
-DEBUG = False
+DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
-SQLALCHEMY_DATABASE_URI = 'mysql://root:@127.0.0.1/test'
+
+# Database name is patife.com
+SQLALCHEMY_DATABASE_URI = 'mysql://root:@127.0.0.1/patife.com'
+SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
 # Creating the application
@@ -31,19 +33,23 @@ class Category(db.Model):
     """
     This is a category
     """
+
+    # Define the table name within database
     __tablename__ = 'categories'
 
+    # Define the contents of each row in the database
     id = db.Column(db.Integer, primary_key=True)
     title_en = db.Column(db.Text, nullable=False)
     title_pt = db.Column(db.Text, nullable=False)
     weight = db.Column(db.Integer, nullable=False)
 
+    # Define how a row is created
     def __init__(self, title_en, title_pt, weight):
         self.title_en = title_en
         self.title_pt = title_pt
         self.weight = weight
 
-    # returbs representation of itself
+    # returns representation of itself
     def __repr__(self):
         return '<Category {}({})>'.format(self.title_en, self.title_pt)
 
@@ -63,6 +69,7 @@ class Entry(db.Model):
     date_updated = db.Column(db.Date, nullable=False, default=date.today, onupdate=date.today)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
 
+    # Define method to get entry.category, and a conversible method to get category.entries
     category = db.relationship('Category', backref=db.backref('entries', lazy='dynamic'))
 
     def __init__(self, title_en, title_pt, text_en, text_pt, category_id=None, date_created=None, date_updated=None):
@@ -94,8 +101,7 @@ def view_entries():
     entries = Entry.query.order_by(Entry.date_created).all()
     categories = Category.query.order_by(Category.weight).all()
     # Rendering index page
-    return render_template('entry_read_all.html',
-                           entries=entries, categories=categories)
+    return render_template('entry_read_all.html', entries=entries, categories=categories)
 
 
 @app.route('/entries/<int:entry_id>/')
@@ -216,13 +222,13 @@ def add_category():
     if not session.get('logged_in'):
         abort(401)
 
-    new_category = Category(
+    category = Category(
         title_en=request.form['title_en'],
         title_pt=request.form['title_pt'],
         weight=request.form['weight'],
     )
 
-    db.session.add(new_category)
+    db.session.add(category)
     db.session.commit()
     # # Return index page with successful message
     flash('New category was successfully posted')
@@ -316,7 +322,7 @@ def config_db():
 
 @app.route('/test')
 def test_css():
-    #test CSS
+    # test CSS
     return render_template('CSSplayground.html')
 
 if __name__ == '__main__':

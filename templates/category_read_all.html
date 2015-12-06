@@ -8,7 +8,9 @@
                     <div class="entry_body">
                         <ul>
                             {% for entry in category.entries %}
-                                <li>{{ entry.title_en }}</li>
+                                <li>
+                                    <a href=/entries/{{ entry.id}}>{{ entry.title_en }}</a>
+                                </li>
                             {% endfor %}
                         </ul>
                     </div>
@@ -18,7 +20,9 @@
                     <div class="entry_body">
                         <ul>
                             {% for entry in category.entries %}
-                                <li>{{ entry.title_pt }}</li>
+                                <li>
+                                    <a href=/entries/{{ entry.id}}>{{ entry.title_en }}</a>
+                                </li>
                             {% endfor %}
                         </ul>
                     </div>
