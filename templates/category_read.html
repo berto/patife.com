@@ -3,7 +3,7 @@
     <div class="column" id="entries">
         <div class="entry">
             <div class="en">
-                <div class="entry_title">{{ category.title_en }}</div>
+                <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_en }}</a></div>
                 <div class="entry_body">
                     <ul>
                         {% for entry in category.entries %}
@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="pt">
-                <div class="entry_title">{{ category.title_pt }}</div>
+                <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_pt }}</a></div>
                 <div class="entry_body">
                     <ul>
                         {% for entry in category.entries %}

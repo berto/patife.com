@@ -3,12 +3,12 @@
     <div class="column" id="entries">
         <div class="entry">
             <div class="en">
-                <div class="entry_title">{{ entry.title_en }}</div>
+                <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title_en }}</a></div>
                 <div class="entry_body">{{ entry.text_en|safe }}</div>
                 <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category.title_en}}</a></div>
             </div>
             <div class="pt">
-                <div class="entry_title">{{ entry.title_pt }}</div>
+                <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title_pt }}</a></div>
                 <div class="entry_body">{{ entry.text_pt|safe }}</div>
                 <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category_title_pt}}</a></div>
             </div>

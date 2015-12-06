@@ -4,24 +4,24 @@
         {% for category in categories %}
             <div class="entry">
                 <div class="en">
-                    <div class="entry_title"><{{ category.title_en }}</div>
+                    <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_en }}</a></div>
                     <div class="entry_body">
                         <ul>
                             {% for entry in category.entries %}
                                 <li>
-                                    <a href=/entries/{{ entry.id}}>{{ entry.title_en }}</a>
+                                    <a href=/entries/{{ entry.id }}>{{ entry.title_en }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
                     </div>
                 </div>
                 <div class="pt">
-                    <div class="entry_title">{{ category.title_pt }}</div>
+                    <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_pt }}</a></div>
                     <div class="entry_body">
                         <ul>
                             {% for entry in category.entries %}
                                 <li>
-                                    <a href=/entries/{{ entry.id}}>{{ entry.title_en }}</a>
+                                    <a href=/entries/{{ entry.id }}>{{ entry.title_en }}</a>
                                 </li>
                             {% endfor %}
                         </ul>
