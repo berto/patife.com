@@ -7,7 +7,7 @@ from datetime import date
 
 from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash)
 from flask_sqlalchemy import SQLAlchemy
-
+from sqlalchemy import desc
 
 # Configuration for our Flask application
 DEBUG = True
@@ -97,8 +97,8 @@ def home_view():
 
 @app.route('/entries/')
 def view_entries():
-    # Selecting all entries and categories from DB
-    entries = Entry.query.order_by(Entry.date_created).all()
+    # Selecting all entries and categories from DB, get newer on top
+    entries = Entry.query.order_by(desc(Entry.date_created)).all()
     categories = Category.query.order_by(Category.weight).all()
     # Rendering index page
     return render_template('entry_read_all.html', entries=entries, categories=categories)

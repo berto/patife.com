@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc9e6b0-64a5-4de1-b020-382fb12e446b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/category_read.html" afterPath="$PROJECT_DIR$/templates/category_read.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/category_read_all.html" afterPath="$PROJECT_DIR$/templates/category_read_all.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/entry_read.html" afterPath="$PROJECT_DIR$/templates/entry_read.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/entry_read_all.html" afterPath="$PROJECT_DIR$/templates/entry_read_all.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/patife.py" afterPath="$PROJECT_DIR$/patife.py" />
     </list>
     <ignored path="patife.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -20,7 +16,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/patife.com$patife_com.coverage" NAME="patife.com Coverage Results" MODIFIED="1449423119355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/patife.com$patife_com.coverage" NAME="patife.com Coverage Results" MODIFIED="1449423660725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -51,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patife.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="patife.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/patife.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.3653846">
+              <caret line="72" column="30" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="30" />
               <folding>
                 <element signature="e#56#81#0" expanded="true" />
               </folding>
@@ -73,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="entry_read_all.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="entry_read_all.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/entry_read_all.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3326613">
+            <state vertical-scroll-proportion="-6.875">
               <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
               <folding />
             </state>
@@ -161,13 +157,13 @@
         <option value="$PROJECT_DIR$/templates/category_update_and_delete.html" />
         <option value="$PROJECT_DIR$/templates/category_create.html" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/patife.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/static/style.css" />
         <option value="$PROJECT_DIR$/templates/category_read_all.html" />
         <option value="$PROJECT_DIR$/templates/category_read.html" />
         <option value="$PROJECT_DIR$/templates/entry_read.html" />
         <option value="$PROJECT_DIR$/templates/entry_read_all.html" />
+        <option value="$PROJECT_DIR$/patife.py" />
       </list>
     </option>
   </component>
@@ -886,6 +882,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -902,16 +899,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="73" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patife.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="26" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="54" />
-          <folding>
-            <element signature="e#56#81#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -939,14 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/category_read_all.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="103" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/category_read.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.625">
@@ -965,9 +944,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/entry_read_all.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326613">
+        <state vertical-scroll-proportion="-6.875">
           <caret line="11" column="94" selection-start-line="11" selection-start-column="94" selection-end-line="11" selection-end-column="94" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/category_read_all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="103" selection-start-line="18" selection-start-column="103" selection-end-line="18" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patife.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3653846">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="30" />
+          <folding>
+            <element signature="e#56#81#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
