@@ -60,6 +60,7 @@ target/
 
 # Created by .ignore support plugin (hsz.mobi)
 
-# folder
-.idea/
+#
 .idea/workspace.xml
+.idea/*.iws
+.idea/tasks.xml
