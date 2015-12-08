@@ -1,3 +1,15 @@
+/* Magic? eheheh */
+* {
+   margin: 0;
+   padding: 0;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ul {
+    margin-left:20px;
+}
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
     font-size: 100%;
@@ -61,7 +73,7 @@
 
 .en {
     float: left;
-    width: calc(50% - 10px);
+    width: calc(50% - 20px);
     margin-right: 20px;
     color: rgb(38,38,38);
     text-align: justify;
@@ -69,7 +81,8 @@
 
 .pt {
     float: right;
-    width: calc(50% - 10px);
+    width: calc(50% - 20px);
+    margin-right: 20px;
     color: rgb(38,38,38);
     font-style: italic;
     text-align: justify;
@@ -125,4 +138,36 @@ a:visited{
 
 .flash{
     color: red;
+}
+
+@media all and (max-width: 700px) {
+    #entries {
+        float: left;
+        width: 100%;
+    }
+
+    #navigation{
+        float: left;
+        width: 100%;
+    }
+
+    .en {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .pt {
+        float: left;
+        width: 100%;
+    }
+
+    .entry {
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        float: left;
+        width: 100%;
+    }
 }
