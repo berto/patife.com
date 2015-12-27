@@ -9,15 +9,19 @@ from flask import (Flask, request, session, redirect, url_for, abort, render_tem
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
 
+import os
+
 # Configuration for our Flask application
 DEBUG = True
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
+MYSQLPASSWORD = os.environ.get('PATIFEMYSQLPASSWORD','')
+
 
 # Database name is patife.com
-SQLALCHEMY_DATABASE_URI = 'mysql://root:@127.0.0.1/patife.com'
+SQLALCHEMY_DATABASE_URI = 'mysql://root:{}@127.0.0.1/patife.com'.format(MYSQLPASSWORD)
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
