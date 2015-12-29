@@ -4,6 +4,7 @@
 
 """
 from datetime import date
+import os
 
 from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash)
 from flask_sqlalchemy import SQLAlchemy
@@ -17,7 +18,7 @@ USERNAME = 'admin'
 PASSWORD = 'default'
 
 # Database name is patife.com
-SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:pSPdC14PdM12@127.0.0.1/patife.com'
+SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL','postgresql://postgres:pSPdC14PdM12@127.0.0.1/patife.com')
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
