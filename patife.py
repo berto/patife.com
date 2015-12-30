@@ -12,13 +12,15 @@ from sqlalchemy import desc
 
 
 # Configuration for our Flask application
-DEBUG = True
+# To have debug veriable true for dev, better set env variable
+DEBUG = False
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 PASSWORD = 'default'
 
-# Database name is patife.com
-SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL','postgresql://postgres:pSPdC14PdM12@127.0.0.1/patife.com')
+# Gets the database url inc user and password from environment variable
+# On production server the variable is set, on the local dev machine we can use pyCharm to configure it
+SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 
