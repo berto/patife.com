@@ -16,12 +16,12 @@ from sqlalchemy import desc
 DEBUG = False
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
-PASSWORD = 'default'
 
 # Gets the database url inc user and password from environment variable
 # On production server the variable is set, on the local dev machine we can use pyCharm to configure it
 SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS = True
+PASSWORD = os.environ.get('ADMIN_PASSWORD')
 
 
 # Creating the application
@@ -30,7 +30,6 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 db = SQLAlchemy(app)
-
 
 class Category(db.Model):
     """
