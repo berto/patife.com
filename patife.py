@@ -13,7 +13,7 @@ from sqlalchemy import desc
 
 # Configuration for our Flask application
 # To have debug veriable true for dev, better set env variable
-DEBUG = False
+
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
 
@@ -22,7 +22,7 @@ USERNAME = 'admin'
 SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 PASSWORD = os.environ.get('ADMIN_PASSWORD')
-
+DEBUG = os.environ.get('DEBUG','False')
 
 # Creating the application
 app = Flask(__name__)
@@ -320,12 +320,6 @@ def config_db():
         abort(401)
     init_db()
     return redirect(url_for('home_view'))
-
-
-@app.route('/test')
-def test_css():
-    # test CSS
-    return render_template('CSSplayground.html')
 
 if __name__ == '__main__':
     # un-comment the init_db below if you want to start without any db setup.
