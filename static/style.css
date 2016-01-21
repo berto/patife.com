@@ -140,7 +140,7 @@ a:visited{
     color: red;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 751px) {
     #entries {
         float: left;
         width: 100%;
