@@ -8,17 +8,17 @@
 }
 
 ul {
-    margin-left:1.2rem;
+    margin-left:20px;
 }
 
 ol {
-    margin-left:1.2rem;
+    margin-left:20px;
 }
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
     font-size: 100%;
-    margin: 20px 20px 20px 20px;
+    margin: 30px 30px 30px 30px;
     line-height: 1.3rem;
 }
 
@@ -90,7 +90,7 @@ ol {
     margin-right: 20px;
     color: rgb(38,38,38);
     font-style: italic;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .entry_category{
