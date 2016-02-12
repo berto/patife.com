@@ -17,8 +17,8 @@ ol {
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
-    font-size: 1.1rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
     margin: 30px 30px 30px 30px;
 }
 
@@ -38,7 +38,7 @@ ol {
 /* inside the header */
 #meta {
     float: right;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 /* This is a class because it will be used multiple times (2) */
@@ -50,14 +50,15 @@ ol {
 /* first column */
 #entries {
     float: left;
-    width: 80%;
+    width: 100%;
 }
 
 /* second column */
 #navigation {
-    float: right;
+    display: inline-block;
+    float: left;
     background-color: beige;
-    width: 20%;
+    width: 100%;
     text-align: left;
 }
 
@@ -68,17 +69,17 @@ ol {
 }
 
 .entry_title{
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .entry_body{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .en {
     float: left;
-    width: calc(50% - 30px);
+    width: calc(50% - 20px);
     margin-right: 20px;
     color: rgb(38,38,38);
     /* text-align: justify; */
@@ -86,15 +87,15 @@ ol {
 
 .pt {
     float: right;
-    width: calc(50% - 30px);
-    margin-right: 20px;
+    width: calc(50% - 20px);
+    margin-left: 20px;
     color: rgb(38,38,38);
     font-style: italic;
     /* text-align: justify; */
 }
 
 p {
-    margin-top: 1.3rem;
+    margin-top: 1.4rem;
 }
 
 .entry_category{
@@ -115,11 +116,13 @@ p {
 .form_field{
     float: left;
     width: 100%;
+    font-size: 1.1rem;
 }
 
 .form_input_big{
     width: 80%;
     height: 20rem;
+    font-size: 1.1rem;
 }
 
 .form_button{
@@ -163,11 +166,14 @@ a:visited{
         float: left;
         width: 100%;
         margin-bottom: 10px;
+        margin-right: 0px;
     }
 
     .pt {
         float: left;
         width: 100%;
+        margin-left: 0px;
+
     }
 
     .entry {
