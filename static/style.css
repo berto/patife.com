@@ -17,9 +17,9 @@ ol {
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
-    font-size: 100%;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
     margin: 30px 30px 30px 30px;
-    line-height: 1.3rem;
 }
 
 /* MAIN STRUCTURE */
@@ -38,7 +38,7 @@ ol {
 /* inside the header */
 #meta {
     float: right;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 /* This is a class because it will be used multiple times (2) */
@@ -68,17 +68,17 @@ ol {
 }
 
 .entry_title{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
 .entry_body{
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 .en {
     float: left;
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
     margin-right: 20px;
     color: rgb(38,38,38);
     /* text-align: justify; */
@@ -86,7 +86,7 @@ ol {
 
 .pt {
     float: right;
-    width: calc(50% - 20px);
+    width: calc(50% - 30px);
     margin-right: 20px;
     color: rgb(38,38,38);
     font-style: italic;
@@ -119,7 +119,7 @@ p {
 
 .form_input_big{
     width: 80%;
-    height: 10rem;
+    height: 20rem;
 }
 
 .form_button{

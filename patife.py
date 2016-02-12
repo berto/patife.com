@@ -12,7 +12,7 @@ from sqlalchemy import desc
 
 
 # Configuration for our Flask application
-# To have debug veriable true for dev, better set env variable
+# To have debug variable true for dev, better set env variable
 
 SECRET_KEY = 'development key'
 USERNAME = 'admin'
@@ -22,7 +22,7 @@ USERNAME = 'admin'
 SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 PASSWORD = os.environ.get('ADMIN_PASSWORD')
-DEBUG = os.environ.get('DEBUG','False')
+DEBUG = os.environ.get('DEBUG', 'False')
 
 # Creating the application
 app = Flask(__name__)
@@ -30,6 +30,7 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 
 db = SQLAlchemy(app)
+
 
 class Category(db.Model):
     """
@@ -71,7 +72,7 @@ class Entry(db.Model):
     date_updated = db.Column(db.Date, nullable=False, default=date.today, onupdate=date.today)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
 
-    # Define method to get entry.category, and a conversible method to get category.entries
+    # Define method to get entry.category, and a reverse method to get category.entries
     category = db.relationship('Category', backref=db.backref('entries', lazy='dynamic'))
 
     def __init__(self, title_en, title_pt, text_en, text_pt, category_id=None, date_created=None, date_updated=None):
