@@ -79,16 +79,16 @@ ol {
 
 .en {
     float: left;
-    width: calc(50% - 20px);
-    margin-right: 20px;
+    width: calc(48% - 15px);
+    margin-right: calc(15px + 2%);
     color: rgb(38,38,38);
     /* text-align: justify; */
 }
 
 .pt {
     float: right;
-    width: calc(50% - 20px);
-    margin-left: 20px;
+    width: calc(48% - 15px);
+    margin-left: calc(15px + 2%);
     color: rgb(38,38,38);
     font-style: italic;
     /* text-align: justify; */
