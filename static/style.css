@@ -86,7 +86,7 @@ ol {
 }
 
 .pt {
-    float: right;
+    float: left;
     width: calc(48% - 15px);
     margin-left: calc(15px + 2%);
     color: rgb(38,38,38);
@@ -152,16 +152,6 @@ a:visited{
 }
 
 @media (max-width: 45em) {
-    #entries {
-        float: left;
-        width: 100%;
-    }
-
-    #navigation{
-        float: left;
-        width: 100%;
-    }
-
     .en {
         float: left;
         width: 100%;
@@ -173,15 +163,5 @@ a:visited{
         float: left;
         width: 100%;
         margin-left: 0px;
-
-    }
-
-    .entry {
-        margin-bottom: 20px;
-    }
-
-    .navigation {
-        float: left;
-        width: 100%;
     }
 }
