@@ -151,7 +151,7 @@ a:visited{
     color: red;
 }
 
-@media all and (max-width: 50em) {
+@media (max-width: 45em) {
     #entries {
         float: left;
         width: 100%;
