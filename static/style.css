@@ -148,7 +148,7 @@ a:visited{
     color: red;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 63em) {
     .en {
         width: calc(48% - 15px);
         margin-bottom: 0px;
