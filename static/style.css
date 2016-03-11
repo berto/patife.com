@@ -1,13 +1,10 @@
 /* Magic? eheheh */
 html {
-    font-size:100%;
 }
 
 * {
     margin: 0;
     padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -21,7 +18,6 @@ ol {
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
-    font-size: 1rem;
     line-height: 1.4rem;
     margin: 30px 30px 30px 30px;
 }
@@ -36,13 +32,11 @@ ol {
 
 #title {
     float: left;
-    font-size: 1.5rem;
 }
 
 /* inside the header */
 #meta {
     float: right;
-    font-size: 1rem;
 }
 
 /* This is a class because it will be used multiple times (2) */
@@ -73,12 +67,10 @@ ol {
 }
 
 .entry_title{
-    font-size: 1rem;
     font-weight: bold;
 }
 
 .entry_body{
-    font-size: 1rem;
 }
 
 .en {
@@ -117,13 +109,11 @@ p {
 .form_field{
     float: left;
     width: 100%;
-    font-size: 1.1rem;
 }
 
 .form_input_big{
     width: 100%;
     height: 30rem;
-    font-size: 1.1rem;
 }
 
 .form_button{
