@@ -1,4 +1,3 @@
-/* Magic? eheheh */
 html {
 }
 
@@ -97,7 +96,7 @@ p {
 .entry_footer{
     width: 100%;
     clear: both;
-    color: lightgrey;
+    color: grey;
 }
 
 /* FORMS */
@@ -140,6 +139,13 @@ a:visited{
 
 .flash{
     color: red;
+}
+
+/* the viewport property is here to make sure the device (mobile) won't zoom out too present the desktop version */
+/* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom; /* this is to ensure it shows correctly in both landscape and portrait mode */
 }
 
 @media (min-width: 63em) {
