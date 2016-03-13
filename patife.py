@@ -322,6 +322,14 @@ def config_db():
     init_db()
     return redirect(url_for('home_view'))
 
+@app.route('/rss/')
+def view_feed():
+    # Selecting all entries and categories from DB, get newer on top
+    entries = Entry.query.order_by(desc(Entry.date_created)).all()
+    # Reder feed
+    return render_template('feed.xml', entries=entries)
+
+
 if __name__ == '__main__':
     # un-comment the init_db below if you want to start without any db setup.
     # init_db()
