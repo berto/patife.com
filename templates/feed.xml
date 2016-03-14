@@ -9,7 +9,7 @@
                   <title>{{ entry.title_en }}</title>
                   <link>http://www.patife.com/entries/{{ entry.id }}</link>
                   <guid>http://www.patife.com/entries/{{ entry.id }}</guid>
-                  <pubDate>{{ entry.date_created }}</pubDate>
+                  <pubDate>{{ entry.date_created.strftime('%a, %d %b %y %T %z') }}</pubDate>
                   <description>{{ entry.text_en|safe }}</description>
                 </item>
             {% endfor %}
