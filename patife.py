@@ -3,7 +3,7 @@
     Patife.com website
 
 """
-from datetime import date
+from datetime import datetime
 import os
 
 from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash)
@@ -68,8 +68,8 @@ class Entry(db.Model):
     title_pt = db.Column(db.Text, nullable=False)
     text_en = db.Column(db.Text, nullable=False)
     text_pt = db.Column(db.Text, nullable=False)
-    date_created = db.Column(db.Date, nullable=False, default=date.today)
-    date_updated = db.Column(db.Date, nullable=False, default=date.today, onupdate=date.today)
+    date_created = db.Column(db.Date, nullable=False, default=datetime.today)
+    date_updated = db.Column(db.Date, nullable=False, default=datetime.today, onupdate=datetime.today)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
 
     # Define method to get entry.category, and a reverse method to get category.entries
@@ -120,7 +120,8 @@ def view_entry(entry_id):
 def new_entry():
     categories = Category.query.order_by(Category.weight).all()
     # just displaying the blank template to add
-    return render_template('entry_create.html', categories=categories, current_time=date.today())
+    print 'time is {}'.format(datetime.today())
+    return render_template('entry_create.html', categories=categories, current_time=datetime.today())
 
 
 @app.route('/entries/add', methods=['POST'])
@@ -152,7 +153,7 @@ def edit_entry(entry_id):
     categories = Category.query.order_by(Category.weight).all()
     # Rendering edit page
     return render_template('entry_update_and_delete.html', entry=entry, categories=categories,
-                           current_time=date.today())
+                           current_time=datetime.today())
 
 
 @app.route('/entries/update', methods=['POST'])
@@ -321,6 +322,7 @@ def config_db():
         abort(401)
     init_db()
     return redirect(url_for('home_view'))
+
 
 @app.route('/rss/')
 def view_feed():
