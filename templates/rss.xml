@@ -5,14 +5,14 @@
         <link>http://www.patife.com/</link>
         <description>Startups. I can't help myself.</description>
             {% for entry in entries %}
-                <item>
-                    <title>{{ entry.title_en }}</title>
-                    <link>http://www.patife.com/entries/{{ entry.id }}</link>
-                    <guid>http://www.patife.com/entries/{{ entry.id }}</guid>
-                    <pubDate>{{ entry.date_created.strftime('%a, %d %b %y %T %z') }}</pubDate>
-                    {# XML would treat HTML as XML, so we need to wrap it #}
-                    <description><![CDATA[{{ entry.text_en|safe }}]]></description>
-                </item>
+            <item>
+                <title>{{ entry.title_en }}</title>
+                <link>http://www.patife.com/entries/{{ entry.id }}</link>
+                <guid>http://www.patife.com/entries/{{ entry.id }}</guid>
+                <pubDate>{{ entry.date_created.strftime('%a, %d %b %y %T %z') }}</pubDate>
+                {# XML would treat HTML as XML, so we need to wrap it #}
+                <description><![CDATA[{{ entry.text_en|safe }}]]></description>
+            </item>
             {% endfor %}
         <atom:link href="http://www.patife.com/rss" rel="self" type="application/rss+xml" />
     </channel>
