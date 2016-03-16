@@ -6,13 +6,13 @@
                 <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title_en }}</a></div>
                 <div class="entry_body">{{ entry.text_en|safe }}</div>
                 <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category.title_en}}</a></div>
-                <div class="entry_footer">Created on {{ entry.date_created.strftime('%%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%%d %b %Y') }} {% if session.logged_in %} <a href=/entries/{{entry.id}}/edit>Edit</a>{% endif %}</div>
+                <div class="entry_footer">Created on {{ entry.date_created.strftime('%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%d %b %Y') }} {% if session.logged_in %}<a href=/entries/{{entry.id}}/edit>Edit</a>{% endif %}</div>
             </div>
             <div class="pt">
                 <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title_pt }}</a></div>
                 <div class="entry_body">{{ entry.text_pt|safe }}</div>
                 <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category_title_pt}}</a></div>
-                <div class="entry_footer">Criado em {{ entry.date_created.strftime('%d-%m-%Y') }}. Atualizado em {{ entry.date_updated.strftime('%d-%m-%Y') }} {% if session.logged_in %} <a href=/entries/{{entry.id}}/edit>Editar</a>{% endif %}</div>
+                <div class="entry_footer">Criado em {{ entry.date_created.strftime('%d-%m-%Y') }}. Atualizado em {{ entry.date_updated.strftime('%d-%m-%Y') }} {% if session.logged_in %}<a href=/entries/{{entry.id}}/edit>Editar</a>{% endif %}</div>
             </div>
         </div>
     </div>
