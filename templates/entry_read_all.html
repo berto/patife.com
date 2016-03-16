@@ -14,7 +14,7 @@
                     <div class="entry_category"><a href=/categories/{{entry.category_id}}>{{entry.category.title_pt}}</a></div>
                 </div>
                 <div class="entry_footer">
-                    {{ entry.date_created }} - {{ entry.date_updated }}
+                    {{ entry.date_created.strftime('%a, %d %b %Y') }} - {{ entry.date_updated.strftime('%a, %d %b %Y') }}
                     {% if session.logged_in %} <a href=/entries/{{entry.id}}/edit>Edit</a>{% endif %}
                 </div>
             </div>
