@@ -324,12 +324,12 @@ def config_db():
     return redirect(url_for('home_view'))
 
 
-@app.route('/rss/')
+@app.route('/rss')
 def view_feed():
     # Selecting all entries and categories from DB, get newer on top
     entries = Entry.query.order_by(desc(Entry.date_created)).all()
     # Reder feed
-    return render_template('feed.xml', entries=entries)
+    return render_template('rss.xml', entries=entries)
 
 
 if __name__ == '__main__':
