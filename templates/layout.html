@@ -2,12 +2,13 @@
 <html>
     <head>
         <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <meta name="viewport" content="initial-scale=1">
         <title>Patife.com</title>
     </head>
     <body>
         <div class=page>
             <div id="header">
-                <div id="title"><a href="{{ url_for('view_entries') }}">Patife.com</a></div>
+                <div id="title"><a href="/entries/">Patife.com</a></div>
                 <div id="meta">
                     {% if not session.logged_in %}
                         <a href="{{ url_for('view_categories') }}">+</a> | <a href="{{ url_for('login') }}">Log in</a>
