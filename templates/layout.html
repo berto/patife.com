@@ -1,24 +1,27 @@
 <!doctype html>
 <html>
-    <head><title>Patife.com</title></head>
-    <meta name="viewport" content="initial-scale=1">
-    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
-    <div class=page>
-        <div id="header">
-            <div id="title"><a href="{{ url_for('view_entries') }}">Patife.com</a></div>
-            <div id="meta">
-                {% if not session.logged_in %}
-                    <a href="{{ url_for('view_categories') }}">+</a> | <a href="{{ url_for('login') }}">Log in</a>
-                {% else %}
-                    <a href="{{ url_for('view_categories') }}">+</a> | <a href="{{ url_for('new_entry') }}">New Entry</a> | <a href="{{ url_for('new_category') }}">New Category</a> | <a href="{{ url_for('logout') }}">Log out</a>
-                {% endif %}
+    <head>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+        <title>Patife.com</title>
+    </head>
+    <body>
+        <div class=page>
+            <div id="header">
+                <div id="title"><a href="{{ url_for('view_entries') }}">Patife.com</a></div>
+                <div id="meta">
+                    {% if not session.logged_in %}
+                        <a href="{{ url_for('view_categories') }}">+</a> | <a href="{{ url_for('login') }}">Log in</a>
+                    {% else %}
+                        <a href="{{ url_for('view_categories') }}">+</a> | <a href="{{ url_for('new_entry') }}">New Entry</a> | <a href="{{ url_for('new_category') }}">New Category</a> | <a href="{{ url_for('logout') }}">Log out</a>
+                    {% endif %}
+                </div>
             </div>
+            <div class="navigation">
+                {% for message in get_flashed_messages() %}
+                    <div class=flash>{{ message }}</div>
+                {% endfor %}
+            </div>
+            {% block body %}{% endblock %}
         </div>
-        <div class="column" id="navigation">
-            {% for message in get_flashed_messages() %}
-                <div class=flash>{{ message }}</div>
-            {% endfor %}
-        </div>
-        {% block body %}{% endblock %}
-    </div>
+    </body>
 </html>

@@ -1,71 +1,72 @@
-html {
+body {
+    padding: 0; /* don't let the browser try to be fancy */
+    margin: 0;  /* don't let the browser try to be fancy */
+    box-sizing: border-box; /* div width, height, border and padding included. margin not */
+    word-wrap: break-word;  /* break words to avoid text going outside of div */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    word-wrap: break-word;
-}
-
-ul {
-    margin-left:20px;
-}
-
-ol {
-    margin-left:20px;
+/* the viewport property is here to make sure the device (mobile) won't zoom out too present the desktop version */
+/* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom; /* this is to ensure it shows correctly in both landscape and portrait mode */
 }
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
-    line-height: 1.4rem;
-    margin: 30px 30px 30px 30px;
+    line-height: 1.3rem;
+    margin-top: calc(1.5rem + 1%);
+    margin-bottom: calc(1.5rem + 1%);
+    margin-left: calc(1.5rem + 2%);
+    margin-right: calc(1.5rem + 2%);
+    display: inline-block;  /* because child elements float, we that the parent .page takes them into account */
 }
 
 /* MAIN STRUCTURE */
 /* This is an ID because we only use it once and specifically*/
 #header {
     width: 100%;
-    z-index: 1;
+    display: inline-block;
+    margin-bottom: 1.3rem;
+}
+
+#navigation {
+    width: 100%;
     display: inline-block;
 }
-
+/* inside the header */
 #title {
     float: left;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-/* inside the header */
 #meta {
     float: right;
 }
 
-/* This is a class because it will be used multiple times (2) */
-.column {
-    margin-top: 15px;
-    display: inline-block;
-}
-
-/* first column */
-#entries {
+.entries {
     float: left;
-    width: 100%;
-}
-
-/* second column */
-#navigation {
     display: inline-block;
-    float: left;
-    background-color: beige;
     width: 100%;
-    text-align: left;
 }
 
 /* ENTRIES */
-.entry {
-    display: block;
-    clear: both;
-    margin-bottom: 20px;
+.entry{
+    float: left;
+    margin-bottom: 1.3rem;
+    width: 100%;
+}
+
+.en {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.pt {
+    float: right;
+    width: 100%;
+    font-style: italic;
 }
 
 .entry_title{
@@ -73,24 +74,6 @@ ol {
 }
 
 .entry_body{
-}
-
-.en {
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-    margin-right: 0px;
-}
-
-.pt {
-    float: left;
-    width: 100%;
-    margin-left: 0px;
-    font-style: italic;
-}
-
-p {
-    margin-top: 1.4rem;
 }
 
 .entry_category{
@@ -142,18 +125,21 @@ a:visited{
     color: red;
 }
 
-/* the viewport property is here to make sure the device (mobile) won't zoom out too present the desktop version */
-/* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
-@viewport{
-    zoom: 1.0;
-    width: extend-to-zoom; /* this is to ensure it shows correctly in both landscape and portrait mode */
+
+ul {
+    margin-left:20px;
 }
 
+ol {
+    margin-left:20px;
+}
+
+/* Default behaviour is mobile */
 @media (min-width: 63em) {
     .en {
         width: calc(48% - 15px);
-        margin-bottom: 0px;
         margin-right: calc(15px + 2%);
+        margin-bottom: 0px;
     }
 
     .pt {

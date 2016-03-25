@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body %}
     {% if session.logged_in %}
-        <div class="column" id="entries">
+        <div class="entries">
             <form action="{{ url_for('update_entry') }}" method=post>
                 <input type=hidden name="id" value="{{ entry.id }}">
                 <div class="entry">
