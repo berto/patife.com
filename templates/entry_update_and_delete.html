@@ -5,44 +5,44 @@
             <form action="{{ url_for('update_entry') }}" method=post>
                 <input type=hidden name="id" value="{{ entry.id }}">
                 <div class="entry">
-                    <div class="en">
-                        <div class="entry_title">
-                            <div class="form_title">Title</div>
-                            <div class="form_field"><input type=text name="title_en" size=30 value="{{entry.title_en}}"></div></div>
-                        <div class="entry_body">
-                            <div class="form_title">Text</div>
-                            <div class="form_field"><textarea name="text_en" class="form_input_big">{{entry.text_en}}</textarea></div></div>
-                        <div class="entry_category">
-                            <div class="form_title">Category</div>
-                            <div class="form_field">
-                                <select name="category_id">
-                                    <option value="NULL"></option>
-                                    {% for category in categories %}
-                                        <option {% if entry.category_id == category.id %} {{ "selected" }}{% endif%} } value="{{ category.id }}">{{ category.title_en }} | {{ category.title_pt }}</option>
-                                    {% endfor %}
-                                </select>
-                            </div>
+                    <div class="entry_title">
+                        <div class="form_title">Title</div>
+                        <div class="form_field"><input type=text name="title_en" size=30 value="{{entry.title_en}}"></div></div>
+                    <div class="entry_body">
+                        <div class="form_title">Text</div>
+                        <div class="form_field"><textarea name="text_en" class="form_input_big">{{entry.text_en}}</textarea></div></div>
+                    <div class="entry_category">
+                        <div class="form_title">Category</div>
+                        <div class="form_field">
+                            <select name="category_id">
+                                <option value="NULL"></option>
+                                {% for category in categories %}
+                                    <option {% if entry.category_id == category.id %} {{ "selected" }}{% endif%} } value="{{ category.id }}">{{ category.title_en }} | {{ category.title_pt }}</option>
+                                {% endfor %}
+                            </select>
                         </div>
                     </div>
-                    <div class="pt">
-                        <div class="entry_title">
-                            <div class="form_title">Título</div>
-                            <div class="form_field"><input type=text name="title_pt" size=30 value="{{entry.title_pt}}"></div></div>
-                        <div class="entry_body">
-                            <div class="form_title">Texto</div>
-                            <div class="form_field"><textarea name="text_pt" class="form_input_big">{{entry.text_pt}}</textarea></div></div>
-                        <div class="entry_category">
-                            <div class="form_title">Categoria</div>
-                        </div>
+                </div>
+                <div class="entry">
+                    <div class="entry_title">
+                        <div class="form_title">Título</div>
+                        <div class="form_field"><input type=text name="title_pt" size=30 value="{{entry.title_pt}}"></div></div>
+                    <div class="entry_body">
+                        <div class="form_title">Texto</div>
+                        <div class="form_field"><textarea name="text_pt" class="form_input_big">{{entry.text_pt}}</textarea></div></div>
+                    <div class="entry_category">
+                        <div class="form_title">Categoria</div>
                     </div>
+                </div>
+                <div class="entry">
                     <div class="entry_footer">
                         <div class="form_title">Date created</div>
                         <div class="form_field"><input type=date name="date_created" value="{{entry.date_created}}"></div>
                         <div class="form_title">Date updated</div>
                         <div class="form_field"><input type=date name="date_updated" value="{{current_time}}"></div>
+                        <input type=submit value=Save>
                     </div>
                 </div>
-                <input type=submit value=Save>
             </form>
             <form action="{{ url_for('delete_entry') }}" method=post>
                 <input type=hidden name="id" value="{{ entry.id }}">

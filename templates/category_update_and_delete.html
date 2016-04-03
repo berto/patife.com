@@ -5,25 +5,25 @@
             <form action="{{ url_for('update_category') }}" method=post>
                 <input type=hidden name="id" value="{{ category.id }}">
                 <div class="entry">
-                    <div class="en">
-                        <div class="entry_title">
-                            <div class="form_title">Title</div>
-                            <div class="form_field"><input type=text name="title_en" size=30 value="{{ category.title_en }}"></div>
-                        </div>
-                        <div class="entry_body">
-                            <div class="form_title">Weight</div>
-                            <div class="form_field"><input type=number name="weight" value="{{ category.weight }}"></div>
-                        </div>
+                    <div class="entry_title">
+                        <div class="form_title">Title</div>
+                        <div class="form_field"><input type=text name="title_en" size=30 value="{{ category.title_en }}"></div>
                     </div>
-                    <div class="pt">
-                        <div class="entry_title">
-                            <div class="form_title">Título</div>
-                            <div class="form_field"><input type=text name="title_pt" size=30 value="{{ category.title_pt }}"></div>
-                        </div>
-                        <div class="entry_body">
-                            <div class="form_title">Peso</div>
-                        </div>
+                    <div class="entry_body">
+                        <div class="form_title">Weight</div>
+                        <div class="form_field"><input type=number name="weight" value="{{ category.weight }}"></div>
                     </div>
+                </div>
+                <div class="entry">
+                    <div class="entry_title">
+                        <div class="form_title">Título</div>
+                        <div class="form_field"><input type=text name="title_pt" size=30 value="{{ category.title_pt }}"></div>
+                    </div>
+                    <div class="entry_body">
+                        <div class="form_title">Peso</div>
+                    </div>
+                </div>
+                <div class="entry">
                     <div class="footer">
                         <div class="form_button"><input type=submit value=Save></div>
                     </div>

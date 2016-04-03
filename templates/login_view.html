@@ -2,31 +2,20 @@
 {% block body %}
     <div class="entries">
         <form action="{{ url_for('login') }}" method=post>
-            <div class="entry">
-                <div class="en">
+
+                <div class="entry">
                     <div class="entry_title">
                         Login {% if error %}Error{{ error }}{% endif %}
                     </div>
                     <div class="entry_body">
                         <div class="form_title">Username</div>
                         <div class="form_field"><input type=text name=username></div>
-                        <div class="form_title">Username</div>
+                        <div class="form_title">Password</div>
                         <div class="form_field"><input type=password name=password></div>
                     </div>
+                    <input type=submit value=Login>
                 </div>
-                <div class="pt">
-                    <div class="entry_title">
-                        Entrar {% if error %}Erro{{ error }}{% endif %}
-                    </div>
-                    <div class="entry_body">
-                        
-                    </div>
-                </div>
-                <div class="entry_footer">
 
-                </div>
-            </div>
-            <input type=submit value=Login>
             </form>
     </div>
 {% endblock %}

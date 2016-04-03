@@ -3,29 +3,15 @@
     <div class="entries">
         {% for category in categories %}
             <div class="entry">
-                <div class="en">
-                    <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_en }}</a></div>
-                    <div class="entry_body">
-                        <ul>
-                            {% for entry in category.entries %}
-                                <li>
-                                    <a href=/entries/{{ entry.id }}>{{ entry.title_en }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-                <div class="pt">
-                    <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_pt }}</a></div>
-                    <div class="entry_body">
-                        <ul>
-                            {% for entry in category.entries %}
-                                <li>
-                                    <a href=/entries/{{ entry.id }}>{{ entry.title_pt }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </div>
+                <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title_en }}</a></div>
+                <div class="entry_body">
+                    <ul>
+                        {% for entry in category.entries %}
+                            <li>
+                                <a href=/entries/{{ entry.id }}>{{ entry.title_en }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
                 <div class="entry_footer">
                     {% if session.logged_in %}<a href=/categories/{{category.id}}/edit>edit</a>{% endif %}
@@ -33,12 +19,7 @@
             </div>
         {% else %}
             <div class="entry">
-                <div class="en">
-                    <div class="entry_title">Nothing to show here</div>
-                </div>
-                <div class="pt">
-                    <div class="entry_title">Nada a mostrar</div>
-                </div>
+                <div class="entry_title">Nothing to show here</div>
             </div>
         {% endfor %}
     </div>

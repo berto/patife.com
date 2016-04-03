@@ -35,18 +35,18 @@ body {
     display: inline-block;
 }
 /* inside the header */
-#title {
+#title{
     float: left;
     font-size: 1.3rem;
 }
 
-#meta {
+#meta{
     float: right;
 }
 
-.entries {
+.entries{
     float: left;
-    display: inline-block;
+    display: inline-block;  /* because child elements float, we that the parent .page takes them into account */
     width: 100%;
 }
 
@@ -55,18 +55,6 @@ body {
     float: left;
     margin-bottom: 1.3rem;
     width: 100%;
-}
-
-.en {
-    float: left;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.pt {
-    float: right;
-    width: 100%;
-    font-style: italic;
 }
 
 .entry_title{
@@ -135,7 +123,7 @@ ol {
 }
 
 /* Default behaviour is mobile */
-@media (min-width: 63em) {
+/*@media (min-width: 63em) {
     .en {
         width: calc(48% - 15px);
         margin-right: calc(15px + 2%);
@@ -146,4 +134,4 @@ ol {
         width: calc(48% - 15px);
         margin-left: calc(15px + 2%);
     }
-}
+}*/
