@@ -14,12 +14,13 @@ body {
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
-    line-height: 1.3rem;
+    display: inline-block;  /* because child elements float, we that the parent .page takes them into account */
     margin-top: calc(1.5rem + 1%);
     margin-bottom: calc(1.5rem + 1%);
     margin-left: calc(1.5rem + 2%);
     margin-right: calc(1.5rem + 2%);
-    display: inline-block;  /* because child elements float, we that the parent .page takes them into account */
+    width: calc(100% - 4% - 3rem);
+    line-height: 1.3rem;
 }
 
 /* MAIN STRUCTURE */
