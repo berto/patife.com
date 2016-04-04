@@ -87,10 +87,10 @@ class Entry(db.Model):
     def __repr__(self):
         return '<Entry {}({})>'.format(self.title_en, self.title_pt)
 
-
 def init_db():
     """Creates the database tables."""
     db.create_all()
+
 
 
 @app.route('/')
@@ -99,12 +99,12 @@ def home_view():
 
 
 @app.route('/entries/')
-def view_entries():
+def view_entries(lang):
     # Selecting all entries and categories from DB, get newer on top
     entries = Entry.query.order_by(desc(Entry.date_created)).all()
     categories = Category.query.order_by(Category.weight).all()
     # Rendering index page
-    return render_template('entry_read_all.html', entries=entries, categories=categories)
+    return render_template('entry_read_all.html', entries=entries, categories=categories, language=lang)
 
 
 @app.route('/entries/<int:entry_id>/')
