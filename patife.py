@@ -56,6 +56,15 @@ class Category(db.Model):
     def __repr__(self):
         return '<Category {}({})>'.format(self.title_en, self.title_pt)
 
+    @property
+    def title(self):
+        # language setting dependent property for title
+        if session.get('lang', 'en') == 'en':
+            return self.title_en
+        else:
+            return self.title_pt
+    
+
 
 class Entry(db.Model):
     """
@@ -87,6 +96,24 @@ class Entry(db.Model):
     def __repr__(self):
         return '<Entry {}({})>'.format(self.title_en, self.title_pt)
 
+    @property
+    def title(self):
+        # language setting dependent property for title
+        if session.get('lang', 'en') == 'en':
+            return self.title_en
+        else:
+            return self.title_pt
+
+    @property
+    def text(self):
+        # language setting dependent property for text
+        if session.get('lang', 'en') == 'en':
+            return self.text_en
+        else:
+            return self.text_pt
+
+
+
 def init_db():
     """Creates the database tables."""
     db.create_all()
@@ -99,7 +126,7 @@ def home_view():
 
 
 @app.route('/entries/')
-def view_entries(lang):
+def view_entries():
     # Selecting all entries and categories from DB, get newer on top
     entries = Entry.query.order_by(desc(Entry.date_created)).all()
     categories = Category.query.order_by(Category.weight).all()
@@ -330,6 +357,15 @@ def view_feed():
     entries = Entry.query.order_by(desc(Entry.date_created)).all()
     # Reder feed
     return render_template('rss.xml', entries=entries)
+
+
+@app.route('/lang/<lang>')
+def set_lang(lang):
+    # language switching, store in session 
+    if lang not in ('en', 'pt'):
+        lang = 'en'
+    session['lang'] = lang
+    return redirect(request.referrer)
 
 
 if __name__ == '__main__':
