@@ -10,6 +10,12 @@
             <div id="header">
                 <div id="title"><a href="/entries/">Patife.com</a></div>
                 <div id="meta">
+                    {% if session.lang == 'pt' %}
+                        <a href="/lang/en">En</a>
+                    {% else %}
+                        <a href="/lang/pt">Pt</a>
+                    {% endif %}
+                    |
                     {% if not session.logged_in %}
                         <a href="{{ url_for('view_categories') }}">Index</a> | <a href="{{ url_for('login') }}">Log in</a>
                     {% else %}
