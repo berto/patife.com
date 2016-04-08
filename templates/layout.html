@@ -10,10 +10,10 @@
             <div id="header">
                 <div id="title"><a href="/entries/">Patife.com</a></div>
                 <div id="meta">
-                    {% if request.cookies.lang == 'pt' %}
-                        <a href="/lang/en">En</a>
+                   {% if session.lang == 'pt' %}
+                        <a href="/lang/en">EN</a>
                     {% else %}
-                        <a href="/lang/pt">Pt</a>
+                        <a href="/lang/pt">PT</a>
                     {% endif %}
                     |
                     {% if not session.logged_in %}

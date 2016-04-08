@@ -112,11 +112,9 @@ class Entry(db.Model):
             return self.text_pt
 
 
-
 def init_db():
     """Creates the database tables."""
     db.create_all()
-
 
 
 @app.route('/')
@@ -146,7 +144,6 @@ def view_entry(entry_id):
 def new_entry():
     categories = Category.query.order_by(Category.weight).all()
     # just displaying the blank template to add
-    print 'time is {}'.format(datetime.today())
     return render_template('entry_create.html', categories=categories, current_time=datetime.today())
 
 

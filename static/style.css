@@ -2,6 +2,7 @@
 /* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
 @viewport{
     zoom: 1.0;
+    /*noinspection CssInvalidPropertyValue*/
     width: extend-to-zoom; /* this is to ensure it shows correctly in both landscape and portrait mode */
 }
 
@@ -112,15 +113,6 @@ a:visited{
 
 .flash{
     color: red;
-}
-
-
-ul {
-    margin-left:20px;
-}
-
-ol {
-    margin-left:20px;
 }
 
 /* Default behaviour is mobile */
