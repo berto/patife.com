@@ -6,7 +6,7 @@
 from datetime import datetime
 import os
 
-from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash)
+from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash, make_response)
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
 
@@ -59,11 +59,10 @@ class Category(db.Model):
     @property
     def title(self):
         # language setting dependent property for title
-        if session.get('lang', 'en') == 'en':
+        if request.cookies.get('lang', 'en') == 'en':
             return self.title_en
         else:
             return self.title_pt
-    
 
 
 class Entry(db.Model):
@@ -99,7 +98,7 @@ class Entry(db.Model):
     @property
     def title(self):
         # language setting dependent property for title
-        if session.get('lang', 'en') == 'en':
+        if request.cookies.get('lang', 'en') == 'en':
             return self.title_en
         else:
             return self.title_pt
@@ -107,7 +106,7 @@ class Entry(db.Model):
     @property
     def text(self):
         # language setting dependent property for text
-        if session.get('lang', 'en') == 'en':
+        if request.cookies.get('lang', 'en') == 'en':
             return self.text_en
         else:
             return self.text_pt
@@ -131,7 +130,7 @@ def view_entries():
     entries = Entry.query.order_by(desc(Entry.date_created)).all()
     categories = Category.query.order_by(Category.weight).all()
     # Rendering index page
-    return render_template('entry_read_all.html', entries=entries, categories=categories, language=lang)
+    return render_template('entry_read_all.html', entries=entries, categories=categories)
 
 
 @app.route('/entries/<int:entry_id>/')
@@ -361,11 +360,13 @@ def view_feed():
 
 @app.route('/lang/<lang>')
 def set_lang(lang):
-    # language switching, store in session 
+    # language switching, store in cookie 
     if lang not in ('en', 'pt'):
         lang = 'en'
-    session['lang'] = lang
-    return redirect(request.referrer)
+    resp = make_response(redirect(request.referrer))
+    one_year = 60 * 60 * 24 * 365
+    resp.set_cookie('lang', lang, max_age=one_year)
+    return resp
 
 
 if __name__ == '__main__':
