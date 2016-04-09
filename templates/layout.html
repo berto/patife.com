@@ -11,16 +11,11 @@
                 <div id="title"><a href="/entries/">Patife.com</a></div>
                 <div id="meta">
                    {% if request.cookies.lang == 'pt' %}
-                        <a href="/lang/en">EN</a>
+                        <a href="/lang/en">EN</a> | <a href="{{ url_for('view_categories') }}">Índice</a> | <a href="{{ url_for('view_feed') }}">RSS</a>{% if not session.logged_in %} | <a href="{{ url_for('login') }}">Entrar</a>{% else %} | <a href="{{ url_for('logout') }}">Sair</a>{% endif %}
                     {% else %}
-                        <a href="/lang/pt">PT</a>
+                        <a href="/lang/pt">PT</a> | <a href="{{ url_for('view_categories') }}">Index</a> | <a href="{{ url_for('view_feed') }}">RSS</a>{% if not session.logged_in %} | <a href="{{ url_for('login') }}">Log in</a>{% else %} | <a href="{{ url_for('logout') }}">Log out</a>{% endif %}
                     {% endif %}
-                    |
-                    {% if not session.logged_in %}
-                        <a href="{{ url_for('view_categories') }}">Index</a> | <a href="{{ url_for('login') }}">Log in</a>
-                    {% else %}
-                        <a href="{{ url_for('view_categories') }}">Index</a> | <a href="{{ url_for('new_entry') }}">New Entry</a> | <a href="{{ url_for('new_category') }}">New Category</a> | <a href="{{ url_for('logout') }}">Log out</a>
-                    {% endif %}
+
                 </div>
             </div>
             <div class="navigation">

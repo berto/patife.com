@@ -3,7 +3,7 @@
     <channel>
         <title>Patife.com</title>
         <link>http://www.patife.com/</link>
-        <description>Startups. I can't help myself.</description>
+        <description>Startups.</description>
         {% for entry in entries %}
             <item>
                 <title>{{ entry.title_en }}</title>
