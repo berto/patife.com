@@ -347,12 +347,14 @@ def config_db():
     return redirect(url_for('home_view'))
 
 
-@app.route('/rss')
-def view_feed():
+@app.route('/rss/<lang>')
+def view_feed(lang):
     # Selecting all entries and categories from DB, get newer on top
     entries = Entry.query.order_by(desc(Entry.date_created)).all()
     # Reder feed
-    return render_template('rss.xml', entries=entries)
+    if lang not in ('en', 'pt'):
+        lang = 'en'
+    return render_template('rss.xml', entries=entries, lang=lang)
 
 
 @app.route('/lang/<lang>')
