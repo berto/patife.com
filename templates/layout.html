@@ -11,9 +11,9 @@
                 <div id="title"><a href="/entries/">Patife.com</a></div>
                 <div id="meta">
                    {% if request.cookies.lang == 'pt' %}
-                        <i><a href="/lang/en">English</a></i> · <a href="{{ url_for('view_categories') }}">Índice</a> · <a href="/rss/en">RSS</a> · <a href="http://eepurl.com/bXmat9">Email</a>{% if session.logged_in %} · <a href="{{ url_for('logout') }}">Sair</a>{% endif %}
+                        <i><a href="/lang/en">English</a></i> · <a href="{{ url_for('view_categories') }}">Índice</a> · <a href="/rss/pt">RSS</a> · <a href="http://eepurl.com/bXmat9">Email</a>{% if session.logged_in %} · <a href="{{ url_for('logout') }}">Sair</a>{% endif %}
                     {% else %}
-                        <i><a href="/lang/pt">Português</a></i> · <a href="{{ url_for('view_categories') }}">Index</a> · <a href="/rss/pt">RSS</a> · <a href="http://eepurl.com/bXl-1j">Email</a>{% if session.logged_in %} · <a href="{{ url_for('logout') }}">Log out</a>{% endif %}
+                        <i><a href="/lang/pt">Português</a></i> · <a href="{{ url_for('view_categories') }}">Index</a> · <a href="/rss/en">RSS</a> · <a href="http://eepurl.com/bXl-1j">Email</a>{% if session.logged_in %} · <a href="{{ url_for('logout') }}">Log out</a>{% endif %}
                     {% endif %}
 
                 </div>

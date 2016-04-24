@@ -5,9 +5,9 @@
         <link>http://www.patife.com/</link>
         <description>
             {% if lang == 'en' %}
-                Startups. I can't help myself.
+                Startups. I can't help myself. 
             {% else %}
-                Startups.
+                Startups. Fora de controlo.
             {% endif %}
         </description>
         {% for entry in entries %}
