@@ -5,11 +5,16 @@
         <link>http://www.patife.com/</link>
         <description>
             {% if lang == 'en' %}
-                Startups. I can't help myself. 
+                Startups. I can't help myself.
             {% else %}
                 Startups. Fora de controlo.
             {% endif %}
         </description>
+        {% if lang == 'en' %}
+            <atom:link href="http://www.patife.com/rss/en" rel="self" type="application/rss+xml" />
+        {% else %}
+            <atom:link href="http://www.patife.com/rss/pt" rel="self" type="application/rss+xml" />
+        {% endif %}
         {% for entry in entries %}
             <item>
                 <title>
@@ -32,6 +37,5 @@
                 </description>
             </item>
         {% endfor %}
-        <atom:link href="http://www.patife.com/rss" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
