@@ -26,7 +26,7 @@
                 </title>
                 <link>http://www.patife.com/entries/{{ entry.id }}</link>
                 <guid>http://www.patife.com/entries/{{ entry.id }}</guid>
-                <pubDate>{{ entry.date_created.strftime('%a, %d %b %y %T %z') }}</pubDate>
+                <pubDate>{{ entry.date_created.strftime('%a, %d %b %Y %T %z') }}</pubDate>
                 {# XML would treat HTML as XML, so we need to wrap it #}
                 <description>
                     {% if lang == 'en' %}
