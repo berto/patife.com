@@ -3,7 +3,7 @@
     <div class="entries">
         {% for category in categories %}
             <div class="entry">
-                <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title }}</a></div>
+                <div class="entry_title"><a href=/categories/{{ category.id }}>{{ category.title }}</a>{% if session.logged_in %} (<a href=/categories/{{category.id}}/edit>edit</a>){% endif %}</div>
                 <div class="entry_body">
                     <ul>
                         {% for entry in category.entries %}
@@ -12,9 +12,6 @@
                             </li>
                         {% endfor %}
                     </ul>
-                </div>
-                <div class="entry_footer">
-                    {% if session.logged_in %}<a href=/categories/{{category.id}}/edit>edit</a>{% endif %}
                 </div>
             </div>
         {% else %}

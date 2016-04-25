@@ -3,10 +3,16 @@
     <div class="entries">
         {% for entry in entries %}
             <div class="entry">
-                <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title }}</a></div>
+                <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title }}</a>{% if session.logged_in %} (<a href=/entries/{{entry.id}}/edit>Edit</a>){% endif %}</div>
                 <div class="entry_body">{{ entry.text|safe }}</div>
                 <div class="entry_category"><a href=/categories/{{ entry.category_id }}>{{ entry.category.title }}</a></div>
-                <div class="entry_footer">Created on {{ entry.date_created.strftime('%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%d %b %Y') }} {% if session.logged_in %}<a href=/entries/{{entry.id}}/edit>Edit</a>{% endif %} </div>
+                <div class="entry_footer">
+                    {% if request.cookies.lang == 'pt' %}
+                        Criado em {{ entry.date_created.strftime('%d/%m/%Y') }}. Atualizado em {{ entry.date_created.strftime('%d/%m/%Y') }}
+                    {% else %}
+                        Created on {{ entry.date_created.strftime('%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%d %b %Y') }}
+                    {% endif %}
+                </div>
             </div>
         {% else %}
             <div class="entry">
