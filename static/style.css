@@ -94,6 +94,12 @@ body {
 }
 /* TEXT */
 
+/* Make lists not behave weirdly */
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #title a {
     color: rgb(38, 38, 38);
 }
