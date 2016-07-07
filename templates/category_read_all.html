@@ -8,7 +8,13 @@
                     <ul>
                         {% for entry in category.entries %}
                             <li>
-                                <a href=/entries/{{ entry.id }}>{{ entry.title }}</a> {% if (current_time - entry.date_created).days <=30 %} New {% endif %} {% if (current_time - entry.date_updated).days <=30 %} Updated {% endif %}
+                                <a href=/entries/{{ entry.id }}>{{ entry.title }}</a>
+                                {% if (current_time - entry.date_created).days <=30 %}
+                                    {% if request.cookies.lang == 'pt' %} Novo {% else %} New {% endif %}
+                                {% endif %}
+                                {% if (current_time - entry.date_updated).days <=30 and ( entry.date_updated > entry.date_created ) %}
+                                    {% if request.cookies.lang == 'pt' %} Atualizado {% else %} Updated {% endif %}
+                                {% endif %}
                             </li>
                         {% endfor %}
                     </ul>
