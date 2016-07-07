@@ -9,6 +9,7 @@ import os
 from flask import (Flask, request, session, redirect, url_for, abort, render_template, flash, make_response)
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
+import pytz
 
 
 # Configuration for our Flask application
@@ -46,6 +47,8 @@ class Category(db.Model):
     title_pt = db.Column(db.Text, nullable=False)
     weight = db.Column(db.Integer, nullable=False)
 
+    entries = db.relationship('Entry', order_by='Entry.date_created.desc()')
+
     # Define how a row is created
     def __init__(self, title_en, title_pt, weight):
         self.title_en = title_en
@@ -81,7 +84,7 @@ class Entry(db.Model):
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
 
     # Define method to get entry.category, and a reverse method to get category.entries
-    category = db.relationship('Category', backref=db.backref('entries', lazy='dynamic'))
+    category = db.relationship('Category')
 
     def __init__(self, title_en, title_pt, text_en, text_pt, category_id=None, date_created=None, date_updated=None):
         self.title_en = title_en
@@ -119,7 +122,7 @@ def init_db():
 
 @app.route('/')
 def home_view():
-    return redirect(url_for('view_entries'))
+    return redirect(url_for('view_categories'))
 
 
 @app.route('/entries/')
@@ -224,7 +227,7 @@ def delete_entry():
 def view_categories():
     categories = Category.query.order_by(Category.weight).all()
     # Rendering index page
-    return render_template('category_read_all.html', categories=categories)
+    return render_template('category_read_all.html', categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
 
 
 @app.route('/categories/<int:category_id>/')

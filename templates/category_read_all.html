@@ -8,7 +8,7 @@
                     <ul>
                         {% for entry in category.entries %}
                             <li>
-                                <a href=/entries/{{ entry.id }}>{{ entry.title }}</a>
+                                <a href=/entries/{{ entry.id }}>{{ entry.title }}</a> {% if (current_time - entry.date_created).days <=30 %} New {% endif %} {% if (current_time - entry.date_updated).days <=30 %} Updated {% endif %}
                             </li>
                         {% endfor %}
                     </ul>
