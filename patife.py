@@ -16,7 +16,6 @@ import pytz
 # To have debug variable true for dev, better set env variable
 
 SECRET_KEY = 'development key'
-USERNAME = 'admin'
 
 # Gets the database url inc user and password from environment variable
 # On production server the variable is set, on the local dev machine we can use pyCharm to configure it
@@ -24,6 +23,7 @@ SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 PASSWORD = os.environ.get('ADMIN_PASSWORD')
 DEBUG = os.environ.get('DEBUG', 'False')
+USERNAME = os.environ.get('ADMIN_USER')
 
 # Creating the application
 app = Flask(__name__)
@@ -362,7 +362,7 @@ def view_feed(lang):
 
 @app.route('/lang/<lang>')
 def set_lang(lang):
-    # language switching, store in cookie 
+    # language switching, store in cookie
     if lang not in ('en', 'pt'):
         lang = 'en'
     resp = make_response(redirect(request.referrer))
