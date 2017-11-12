@@ -2,7 +2,7 @@
 {% block body %}
     <div class="entries">
         <div class="entry">
-            <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title }}</a>{% if session.logged_in %} (<a href=/entries/{{entry.id}}/edit>edit</a>){% endif %}</div>
+            <div class="entry_title">{{ entry.title }}{% if session.logged_in %} (<a href=/entries/{{entry.id}}/edit>edit</a>){% endif %}</div>
             <div class="entry_body">{{ entry.text|safe }}</div>
             <div class="entry_category"><a href=/categories/{{ entry.category_id }}>{{ entry.category.title }}</a></div>
             <div class="entry_footer">
