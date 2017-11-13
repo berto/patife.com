@@ -22,7 +22,7 @@ SECRET_KEY = 'development key'
 SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 PASSWORD = os.environ['ADMIN_PASSWORD']
-DEBUG = os.environ['DEBUG', 'False']
+DEBUG = os.environ.get('DEBUG', 'False') in ('True', 'true', '1')
 USERNAME = os.environ['ADMIN_USER']
 
 # Creating the application
