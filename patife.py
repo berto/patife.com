@@ -19,11 +19,11 @@ SECRET_KEY = 'development key'
 
 # Gets the database url inc user and password from environment variable
 # On production server the variable is set, on the local dev machine we can use pyCharm to configure it
-SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 SQLALCHEMY_TRACK_MODIFICATIONS = True
-PASSWORD = os.environ.get('ADMIN_PASSWORD')
-DEBUG = os.environ.get('DEBUG', 'False')
-USERNAME = os.environ.get('ADMIN_USER')
+PASSWORD = os.environ['ADMIN_PASSWORD']
+DEBUG = os.environ['DEBUG', 'False']
+USERNAME = os.environ['ADMIN_USER']
 
 # Creating the application
 app = Flask(__name__)
