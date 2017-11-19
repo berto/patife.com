@@ -10,6 +10,7 @@ from flask import (Flask, request, session, redirect, url_for, abort, render_tem
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
 import pytz
+import CommonMark
 
 
 # Configuration for our Flask application
@@ -79,6 +80,8 @@ class Entry(db.Model):
     title_pt = db.Column(db.Text, nullable=False)
     text_en = db.Column(db.Text, nullable=False)
     text_pt = db.Column(db.Text, nullable=False)
+    html_en = db.Column(db.Text, nullable=False)
+    html_pt = db.Column(db.Text, nullable=False)
     date_created = db.Column(db.Date, nullable=False, default=datetime.today)
     date_updated = db.Column(db.Date, nullable=False, default=datetime.today, onupdate=datetime.today)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
@@ -86,11 +89,13 @@ class Entry(db.Model):
     # Define method to get entry.category, and a reverse method to get category.entries
     category = db.relationship('Category')
 
-    def __init__(self, title_en, title_pt, text_en, text_pt, category_id=None, date_created=None, date_updated=None):
+    def __init__(self, title_en, title_pt, text_en, text_pt, html_en, html_pt, category_id=None, date_created=None, date_updated=None):
         self.title_en = title_en
         self.title_pt = title_pt
         self.text_en = text_en
         self.text_pt = text_pt
+        self.html_en = html_en
+        self.html_pt = html_pt
         self.category_id = category_id
         self.date_created = date_created
         self.date_updated = date_updated
@@ -114,6 +119,13 @@ class Entry(db.Model):
         else:
             return self.text_pt
 
+    @property
+    def html(self):
+        # language setting dependent property for text
+        if request.cookies.get('lang', 'en') == 'en':
+            return self.html_en
+        else:
+            return self.html_pt
 
 def init_db():
     """Creates the database tables."""
@@ -161,6 +173,8 @@ def add_entry():
         title_pt=request.form['title_pt'],
         text_en=request.form['text_en'],
         text_pt=request.form['text_pt'],
+        html_en=CommonMark.commonmark(request.form['text_en']),
+        html_pt=CommonMark.commonmark(request.form['text_pt']),
         category_id=request.form['category_id'],
         date_created=request.form['date_created'],
         date_updated=request.form['date_updated'],
@@ -196,6 +210,8 @@ def update_entry():
     entry.title_pt = request.form['title_pt']
     entry.text_en = request.form['text_en']
     entry.text_pt = request.form['text_pt']
+    entry.html_en = CommonMark.commonmark(request.form['text_en'])
+    entry.html_pt = CommonMark.commonmark(request.form['text_pt'])
     entry.category_id = request.form['category_id']
     entry.date_created = request.form['date_created']
     entry.date_updated = request.form['date_updated']
@@ -203,7 +219,7 @@ def update_entry():
     db.session.add(entry)
     db.session.commit()
     flash('Entry was successfully updated')
-    return redirect(url_for('view_entries'))
+    return redirect(url_for('home_view'))
 
 
 @app.route('/entries/delete', methods=['POST'])
@@ -230,15 +246,6 @@ def view_categories():
     return render_template('category_read_all.html', categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
 
 
-@app.route('/categories/<int:category_id>/')
-def view_category(category_id):
-    category = Category.query.get(category_id)
-    if category is None:
-        abort(404)
-    # Rendering edit page
-    return render_template('category_read.html', category=category)
-
-
 @app.route('/categories/new')
 def new_category():
     categories = Category.query.order_by(Category.weight).all()
@@ -262,7 +269,7 @@ def add_category():
     db.session.commit()
     # # Return index page with successful message
     flash('New category was successfully posted')
-    return redirect(url_for('view_categories'))
+    return redirect(url_for('home_view'))
 
 
 @app.route('/categories/<int:category_id>/edit')
@@ -290,7 +297,7 @@ def update_category():
     db.session.add(category)
     db.session.commit()
 
-    return redirect(url_for('view_categories'))
+    return redirect(url_for('home_view'))
 
 
 @app.route('/categories/delete', methods=['POST'])
