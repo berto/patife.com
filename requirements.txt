@@ -4,4 +4,4 @@ SQLAlchemy==1.1.15
 psycopg2
 gunicorn
 pytz
-commonmark==0.74
+commonmark-py==0.74
