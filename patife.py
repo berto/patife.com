@@ -209,10 +209,8 @@ def update_entry():
     entry.title_en = request.form['title_en']
     entry.title_pt = request.form['title_pt']
     entry.text_en = request.form['text_en']
-    flash('text_en:' + entry.text_en)
     entry.text_pt = request.form['text_pt']
     entry.html_en = CommonMark.commonmark(request.form['text_en'])
-    flash('html_en:' + entry.html_en)
     entry.html_pt = CommonMark.commonmark(request.form['text_pt'])
     entry.category_id = request.form['category_id']
     entry.date_created = request.form['date_created']
