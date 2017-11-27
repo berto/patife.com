@@ -64,7 +64,6 @@ body {
 }
 
 .entry_body{
-    margin-bottom: 1.3rem;
 }
 
 .entry_category{
@@ -72,6 +71,7 @@ body {
 }
 
 .entry_footer{
+    margin-top: 1.3rem;
     color: grey;
 }
 
