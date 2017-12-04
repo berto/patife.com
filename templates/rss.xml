@@ -30,9 +30,9 @@
                 {# XML would treat HTML as XML, so we need to wrap it #}
                 <description>
                     {% if lang == 'en' %}
-                        <![CDATA[{{ entry.text_en|safe }}]]>
+                        <![CDATA[{{ entry.html_en|safe }}]]>
                     {% else %}
-                        <![CDATA[{{ entry.text_pt|safe }}]]>
+                        <![CDATA[{{ entry.html_pt|safe }}]]>
                     {% endif %}
                 </description>
             </item>
