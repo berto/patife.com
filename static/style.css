@@ -11,23 +11,19 @@ body {
     margin: 0;  /* don't let the browser try to be fancy */
     box-sizing: border-box; /* div width, height, border and padding included. margin not */
     word-wrap: break-word;  /* break words to avoid text going outside of div */
+    color: #454545;
 }
 
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
-    display: inline-block;  /* because child elements float, we that the parent .page takes them into account */
+    display: inline-block;
     margin-top: calc(1.5rem + 1%);
     margin-bottom: calc(1.5rem + 1%);
     margin-left: calc(1rem + 2%);
     margin-right: calc(1rem + 2%);
-    width: calc(100% - 4% - 3rem);
+    width: calc(100% - 4% - 2rem);
     line-height: 1.3rem;
-    /* margin-top: calc(2rem + 1%);
-    margin-bottom: calc(1.5rem + 1%);
-    margin-left: calc(-5rem + 25%);
-    margin-right: calc(-5rem + 25%);
-    width: calc(100% - 50% + 10rem);
-    line-height: 1.4rem; */
+
 }
 
 /* MAIN STRUCTURE */
