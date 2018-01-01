@@ -121,7 +121,9 @@ code{
 }
 
 blockquote{
-/*  border-left: 5px solid #eee;*/
+  padding: 0px 10px;
+  margin: 0 25px 0px;
+  border-left: 5px solid #eee;
 }
 
 ul{
