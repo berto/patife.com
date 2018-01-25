@@ -16,7 +16,7 @@ import CommonMark
 # Configuration for our Flask application
 # To have debug variable true for dev, better set env variable
 
-SECRET_KEY = 'development key'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # Gets the database url inc user and password from environment variable
 # On production server the variable is set, on the local dev machine we can use pyCharm to configure it
