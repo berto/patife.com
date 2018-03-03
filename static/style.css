@@ -17,7 +17,7 @@ body {
 /* Obsessive compulsive behaviour: Nobody touch the borders! */
 .page {
     display: block;
-    margin: 2em auto;
+    margin: auto;
     padding: 2em;
     max-width: 760px;
     font-size: 1.15rem;
