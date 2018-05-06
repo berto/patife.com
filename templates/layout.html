@@ -12,9 +12,9 @@
                 <div id="title"><a href="/">Patife.com</a></div>
                 <div id="meta">
                    {% if request.cookies.lang == 'pt' %}
-                       <a href="/lang/en">EN</a> · <a href="/rss/pt">RSS</a> · <a href="http://eepurl.com/bXmat9">Email</a>{% if session.logged_in %} · <a href="{{ url_for('logout') }}">Sair</a>{% endif %}
+                       <a href="/lang/en">EN</a> · <a href="/rss/pt">RSS</a> {% if session.logged_in %} · <a href="{{ url_for('logout') }}">Sair</a>{% endif %}
                    {% else %}
-                       <a href="/lang/pt">PT</a> · <a href="/rss/en">RSS</a> · <a href="http://eepurl.com/bXl-1j">Email</a>{% if session.logged_in %} · <a href="{{ url_for('logout') }}">Log out</a>{% endif %}
+                       <a href="/lang/pt">PT</a> · <a href="/rss/en">RSS</a> {% if session.logged_in %} · <a href="{{ url_for('logout') }}">Log out</a>{% endif %}
                    {% endif %}
                 </div>
             </div>
