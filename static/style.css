@@ -147,7 +147,7 @@ a:visited{
 }
 
 p {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.575rem; /* half of the space for paragraph */
 }
 
 /* Default behaviour is mobile */
