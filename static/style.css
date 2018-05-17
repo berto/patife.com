@@ -146,6 +146,10 @@ a:visited{
     color: red;
 }
 
+.p {
+    margin-bottom: 0.8rem;
+}
+
 /* Default behaviour is mobile */
 /*@media (min-width: 63em) {
     .en {
