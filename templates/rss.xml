@@ -3,38 +3,16 @@
     <channel>
         <title>Patife.com</title>
         <link>http://www.patife.com/</link>
-        <description>
-            {% if lang == 'en' %}
-                Startups. I can't help myself.
-            {% else %}
-                Startups. Fora de controlo.
-            {% endif %}
-        </description>
-        {% if lang == 'en' %}
-            <atom:link href="http://www.patife.com/rss/en" rel="self" type="application/rss+xml" />
-        {% else %}
-            <atom:link href="http://www.patife.com/rss/pt" rel="self" type="application/rss+xml" />
-        {% endif %}
+        <description>I can't help myself.</description>
+        <atom:link href="http://www.patife.com/rss/en" rel="self" type="application/rss+xml" />
         {% for entry in entries %}
             <item>
-                <title>
-                    {% if lang == 'en' %}
-                        {{ entry.title_en }}
-                    {% else %}
-                        {{ entry.title_pt }}
-                    {% endif %}
-                </title>
+                <title>{{ entry.title_en }}</title>
                 <link>http://www.patife.com/entries/{{ entry.id }}</link>
                 <guid>http://www.patife.com/entries/{{ entry.id }}</guid>
                 <pubDate>{{ entry.date_created.strftime('%a, %d %b %Y %T %z') }}</pubDate>
                 {# XML would treat HTML as XML, so we need to wrap it #}
-                <description>
-                    {% if lang == 'en' %}
-                        <![CDATA[{{ entry.html_en|safe }}]]>
-                    {% else %}
-                        <![CDATA[{{ entry.html_pt|safe }}]]>
-                    {% endif %}
-                </description>
+                <description><![CDATA[{{ entry.html_en|safe }}]]></description>
             </item>
         {% endfor %}
     </channel>

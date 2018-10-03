@@ -6,11 +6,7 @@
                 <div class="entry_title"><a href=/entries/{{ entry.id }}>{{ entry.title }}</a>{% if session.logged_in %} (<a href=/entries/{{entry.id}}/edit>edit</a>){% endif %}</div>
                 <div class="entry_body">{{ entry.html|safe }}</div>
                 <div class="entry_footer">
-                    {% if request.cookies.lang == 'pt' %}
-                        Criado em {{ entry.date_created.strftime('%d/%m/%Y') }}. Atualizado em {{ entry.date_created.strftime('%d/%m/%Y') }}
-                    {% else %}
-                        Created on {{ entry.date_created.strftime('%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%d %b %Y') }}
-                    {% endif %}
+                  Created on {{ entry.date_created.strftime('%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%d %b %Y') }}
                 </div>
             </div>
         {% else %}

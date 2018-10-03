@@ -45,20 +45,18 @@ class Category(db.Model):
     # Define the contents of each row in the database
     id = db.Column(db.Integer, primary_key=True)
     title_en = db.Column(db.Text, nullable=False)
-    title_pt = db.Column(db.Text, nullable=False)
     weight = db.Column(db.Integer, nullable=False)
 
     entries = db.relationship('Entry', order_by='Entry.date_created.desc()')
 
     # Define how a row is created
-    def __init__(self, title_en, title_pt, weight):
+    def __init__(self, title_en, weight):
         self.title_en = title_en
-        self.title_pt = title_pt
         self.weight = weight
 
     # returns representation of itself
     def __repr__(self):
-        return '<Category {}({})>'.format(self.title_en, self.title_pt)
+        return '<Category {}({})>'.format(self.title_en)
 
     @property
     def title(self):
@@ -66,7 +64,7 @@ class Category(db.Model):
         if request.cookies.get('lang', 'en') == 'en':
             return self.title_en
         else:
-            return self.title_pt
+            return self.title_en
 
 
 class Entry(db.Model):
@@ -77,11 +75,8 @@ class Entry(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     title_en = db.Column(db.Text, nullable=False)
-    title_pt = db.Column(db.Text, nullable=False)
     text_en = db.Column(db.Text, nullable=False)
-    text_pt = db.Column(db.Text, nullable=False)
     html_en = db.Column(db.Text, nullable=False)
-    html_pt = db.Column(db.Text, nullable=False)
     date_created = db.Column(db.Date, nullable=False, default=datetime.today)
     date_updated = db.Column(db.Date, nullable=False, default=datetime.today, onupdate=datetime.today)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'))
@@ -89,19 +84,16 @@ class Entry(db.Model):
     # Define method to get entry.category, and a reverse method to get category.entries
     category = db.relationship('Category')
 
-    def __init__(self, title_en, title_pt, text_en, text_pt, html_en, html_pt, category_id=None, date_created=None, date_updated=None):
+    def __init__(self, title_en, text_en, html_en, category_id=None, date_created=None, date_updated=None):
         self.title_en = title_en
-        self.title_pt = title_pt
         self.text_en = text_en
-        self.text_pt = text_pt
         self.html_en = html_en
-        self.html_pt = html_pt
         self.category_id = category_id
         self.date_created = date_created
         self.date_updated = date_updated
 
     def __repr__(self):
-        return '<Entry {}({})>'.format(self.title_en, self.title_pt)
+        return '<Entry {}({})>'.format(self.title_en)
 
     @property
     def title(self):
@@ -109,7 +101,7 @@ class Entry(db.Model):
         if request.cookies.get('lang', 'en') == 'en':
             return self.title_en
         else:
-            return self.title_pt
+            return self.title_en
 
     @property
     def text(self):
@@ -117,7 +109,7 @@ class Entry(db.Model):
         if request.cookies.get('lang', 'en') == 'en':
             return self.text_en
         else:
-            return self.text_pt
+            return self.text_en
 
     @property
     def html(self):
@@ -125,7 +117,7 @@ class Entry(db.Model):
         if request.cookies.get('lang', 'en') == 'en':
             return self.html_en
         else:
-            return self.html_pt
+            return self.html_en
 
 def init_db():
     """Creates the database tables."""
@@ -170,11 +162,8 @@ def add_entry():
 
     entry = Entry(
         title_en=request.form['title_en'],
-        title_pt=request.form['title_pt'],
         text_en=request.form['text_en'],
-        text_pt=request.form['text_pt'],
         html_en=CommonMark.commonmark(request.form['text_en']),
-        html_pt=CommonMark.commonmark(request.form['text_pt']),
         category_id=request.form['category_id'],
         date_created=request.form['date_created'],
         date_updated=request.form['date_updated'],
@@ -207,11 +196,8 @@ def update_entry():
     if entry is None:
         abort(404)
     entry.title_en = request.form['title_en']
-    entry.title_pt = request.form['title_pt']
     entry.text_en = request.form['text_en']
-    entry.text_pt = request.form['text_pt']
     entry.html_en = CommonMark.commonmark(request.form['text_en'])
-    entry.html_pt = CommonMark.commonmark(request.form['text_pt'])
     entry.category_id = request.form['category_id']
     entry.date_created = request.form['date_created']
     entry.date_updated = request.form['date_updated']
@@ -261,7 +247,6 @@ def add_category():
 
     category = Category(
         title_en=request.form['title_en'],
-        title_pt=request.form['title_pt'],
         weight=request.form['weight'],
     )
 
@@ -291,7 +276,6 @@ def update_category():
     if category is None:
         abort(404)
     category.title_en = request.form['title_en']
-    category.title_pt = request.form['title_pt']
     category.weight = request.form['weight']
 
     db.session.add(category)
