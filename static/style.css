@@ -153,6 +153,16 @@ p {
     margin-bottom: 0.46rem; /* 40% of the top margin space for bottom paragraph */
 }
 
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid lightgrey;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  vertical-align: top;
+}
+
 /* Default behaviour is mobile */
 /*@media (min-width: 63em) {
     .en {
