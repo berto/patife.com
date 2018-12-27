@@ -10,7 +10,7 @@ from flask import (Flask, request, session, redirect, url_for, abort, render_tem
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import desc
 import pytz
-import CommonMark
+import markdown
 
 
 # Configuration for our Flask application
@@ -163,7 +163,7 @@ def add_entry():
     entry = Entry(
         title_en=request.form['title_en'],
         text_en=request.form['text_en'],
-        html_en=CommonMark.commonmark(request.form['text_en']),
+        html_en=markdown.markdown(request.form['text_en'], extensions=['nl2br','tables']),
         category_id=request.form['category_id'],
         date_created=request.form['date_created'],
         date_updated=request.form['date_updated'],
@@ -197,7 +197,7 @@ def update_entry():
         abort(404)
     entry.title_en = request.form['title_en']
     entry.text_en = request.form['text_en']
-    entry.html_en = CommonMark.commonmark(request.form['text_en'])
+    entry.html_en = markdown.markdown(request.form['text_en'], extensions=['nl2br','tables']),
     entry.category_id = request.form['category_id']
     entry.date_created = request.form['date_created']
     entry.date_updated = request.form['date_updated']
