@@ -29,7 +29,6 @@ body {
     overflow-y: scroll;
     position: fixed;
     width: calc(100%-300px);
-    left: 0;
     top: 0;
     height: 100vh;
 }
