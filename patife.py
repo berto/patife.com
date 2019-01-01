@@ -129,6 +129,7 @@ def home_view():
     return redirect(url_for('view_categories'))
 
 
+
 @app.route('/entries/')
 def view_entries():
     # Selecting all entries and categories from DB, get newer on top
@@ -137,6 +138,15 @@ def view_entries():
     # Rendering index page
     return render_template('entry_read_all.html', entries=entries, categories=categories)
 
+@app.route('/entries-v2/<int:entry_id>/')
+def view_entry2(entry_id):
+    # Getting entry from DB
+    entry = Entry.query.get(entry_id)
+    categories = Category.query.order_by(Category.weight).all()
+
+    if entry is None:
+        abort(404)
+    return render_template('entry_read-v2.html', entry=entry, categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
 
 @app.route('/entries/<int:entry_id>/')
 def view_entry(entry_id):

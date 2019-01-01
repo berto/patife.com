@@ -1,0 +1,183 @@
+/* the viewport property is here to make sure the device (mobile) won't zoom out too present the desktop version */
+/* http://webdesign.tutsplus.com/articles/quick-tip-dont-forget-the-viewport-meta-tag--webdesign-5972 */
+@viewport{
+    zoom: 1.0;
+    /*noinspection CssInvalidPropertyValue*/
+    width: extend-to-zoom; /* this is to ensure it shows correctly in both landscape and portrait mode */
+}
+
+body {
+    padding: 0; /* don't let the browser try to be fancy */
+    margin: 0;  /* don't let the browser try to be fancy */
+    box-sizing: border-box; /* div width, height, border and padding included. margin not */
+    word-wrap: break-word;  /* break words to avoid text going outside of div */
+    color: #454545;
+}
+
+.nav {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    background-color: #f7fdff;
+    top: 0;
+}
+
+.content {
+    overflow-y: scroll;
+    position: fixed;
+    width: calc(100%-300px);
+    left: 0;
+    top: 0;
+    height: 100vh;
+}
+
+.index {
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    max-width: 760px;
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+}
+
+.page {
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    max-width: 760px;
+    font-size: 1.15rem;
+    line-height: 1.6rem;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .nav {
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+}
+
+#title{
+    float: left;
+    font-size: 1.3rem;
+}
+
+#meta{
+    float: right;
+}
+
+/* ENTRIES */
+.entry{
+    float: left;
+    margin-bottom: 1.3rem;
+    width: 100%;
+}
+
+.entry_title{
+    font-weight: bold;
+}
+
+.entry_body{
+}
+
+.entry_category{
+    color: grey;
+}
+
+.entry_footer{
+    margin-top: 1.3rem;
+    color: grey;
+}
+
+.category{
+}
+
+/* FORMS */
+.form_title{
+    float: left;
+    width: 100%;
+}
+
+.form_field{
+    float: left;
+    width: 100%;
+}
+
+.form_input{
+    width: 100%;
+    font-size: 1.05rem;
+}
+
+.form_input_big{
+    width: 100%;
+    height: 30rem;
+    font-size: 1.05rem;
+}
+
+.form_button{
+    display: block;
+}
+/* TEXT */
+
+/* Make lists not behave weirdly */
+code{
+  padding: 2px 4px;
+  /* font-size: 90%; */
+  /* color: #c7254e; */
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+blockquote{
+  padding: 0px 10px;
+  margin: 0 25px 0px;
+  border-left: 5px solid #eee;
+}
+
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#title a {
+    color: rgb(38, 38, 38);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:visited{
+    text-decoration: underline;
+    color: blue;
+}
+
+.flash{
+    color: red;
+}
+
+p {
+    margin-bottom: 0.46rem; /* 40% of the top margin space for bottom paragraph */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid lightgrey;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  vertical-align: top;
+}
