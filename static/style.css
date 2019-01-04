@@ -58,72 +58,72 @@ body {
 
 }
 
-#title{
+#title {
     float: left;
     font-size: 1.1rem;
     color: #777777;
 }
 
-#meta{
+#meta {
     float: right;
 }
 
 /* ENTRIES */
-.entry{
+.entry {
     float: left;
     margin-bottom: 1.3rem;
     width: 100%;
 }
 
-.entry_title{
+.entry_title {
     font-weight: bold;
     font-size: 1.1rem;
 }
 
-.entry_body{
+.entry_body {
 }
 
-.entry_category{
+.entry_category {
     color: grey;
 }
 
-.entry_footer{
+.entry_footer {
     margin-top: 1.3rem;
     color: grey;
 }
 
-.category{
+.category {
 }
 
 /* FORMS */
-.form_title{
+.form_title {
     float: left;
     width: 100%;
 }
 
-.form_field{
+.form_field {
     float: left;
     width: 100%;
 }
 
-.form_input{
+.form_input {
     width: 100%;
     font-size: 1.05rem;
 }
 
-.form_input_big{
+.form_input_big {
     width: 100%;
     height: 30rem;
     font-size: 1.05rem;
 }
 
-.form_button{
+.form_button {
     display: block;
 }
 /* TEXT */
 
 /* Make lists not behave weirdly */
-code{
+code {
   padding: 2px 4px;
   /* font-size: 90%; */
   /* color: #c7254e; */
@@ -131,13 +131,13 @@ code{
   border-radius: 4px;
 }
 
-blockquote{
+blockquote {
   padding: 0px 10px;
   margin: 0 25px 0px;
   border-left: 5px solid #eee;
 }
 
-ul{
+ul {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -151,17 +151,17 @@ ul{
     color: rgb(38, 38, 38);
 }
 
-.index a:hover{
+.index a:hover {
     text-decoration: underline;
     color: rgb(38, 38, 38);
 }
 
-.index a:visited{
+.index a:visited {
     text-decoration: underline;
     color: rgb(38, 38, 38);
 }
 
-.flash{
+.flash {
     color: red;
 }
 
@@ -169,17 +169,33 @@ a:link {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-a:visited{
+a:visited {
     text-decoration: underline;
     color: blue;
 }
 
-.flash{
+.flash {
     color: red;
+}
+
+.new {
+    font-size: 0.8rem;
+    color: lemonchiffon;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: yellow;
+}
+
+.update {
+    font-size: 0.8rem;
+    color: lightskyblue;
+    border-radius: 3px;
+    padding: 2px;
+    background-color: blue;
 }
 
 p {
