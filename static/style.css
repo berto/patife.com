@@ -184,18 +184,18 @@ a:visited {
 
 .new {
     font-size: 0.8rem;
-    color: lemonchiffon;
+    color: white;
     border-radius: 3px;
     padding: 2px;
-    background-color: yellow;
+    background-color: lemonchiffon;
 }
 
 .update {
     font-size: 0.8rem;
-    color: lightskyblue;
+    color: white;
     border-radius: 3px;
     padding: 2px;
-    background-color: blue;
+    background-color: lightskyblue;
 }
 
 p {
