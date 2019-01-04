@@ -126,36 +126,24 @@ def init_db():
 
 @app.route('/')
 def home_view():
-    return redirect(url_for('view_categories'))
+    return redirect(url_for('view_start'))
 
 
-
-@app.route('/entries/')
-def view_entries():
-    # Selecting all entries and categories from DB, get newer on top
-    entries = Entry.query.order_by(desc(Entry.date_created)).all()
+@app.route('/start')
+def view_start():
+    # Getting categories from DB
     categories = Category.query.order_by(Category.weight).all()
-    # Rendering index page
-    return render_template('entry_read_all.html', entries=entries, categories=categories)
-
-@app.route('/entries-v2/<int:entry_id>/')
-def view_entry2(entry_id):
-    # Getting entry from DB
-    entry = Entry.query.get(entry_id)
-    categories = Category.query.order_by(Category.weight).all()
-
-    if entry is None:
-        abort(404)
-    return render_template('entry_read-v2.html', entry=entry, categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
+    return render_template('start.html', categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
 
 @app.route('/entries/<int:entry_id>/')
 def view_entry(entry_id):
     # Getting entry from DB
     entry = Entry.query.get(entry_id)
+    categories = Category.query.order_by(Category.weight).all()
+
     if entry is None:
         abort(404)
-    return render_template('entry_read.html', entry=entry)
-
+    return render_template('entry_read.html', entry=entry, categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
 
 @app.route('/entries/new')
 def new_entry():
@@ -233,14 +221,6 @@ def delete_entry():
     db.session.commit()
     flash('Entry was successfully deleted')
     return redirect(url_for('home_view'))
-
-
-@app.route('/categories/')
-def view_categories():
-    categories = Category.query.order_by(Category.weight).all()
-    # Rendering index page
-    return render_template('category_read_all.html', categories=categories, current_time=datetime.utcnow().replace(tzinfo=pytz.UTC))
-
 
 @app.route('/categories/new')
 def new_category():
@@ -340,16 +320,14 @@ def logout():
     flash('See you buddy! You were logged out')
     return redirect(url_for('home_view'))
 
-
-@app.route('/config_db')
-def config_db():
-    # call this function to reset the whole database. eheheheh
-    # If we are not logged in - abort request
-    if not session.get('logged_in'):
-        abort(401)
-    init_db()
-    return redirect(url_for('home_view'))
-
+# @app.route('/config_db')
+# def config_db():
+#     # call this function to reset the whole database. eheheheh
+#     # If we are not logged in - abort request
+#     if not session.get('logged_in'):
+#         abort(401)
+#     init_db()
+#     return redirect(url_for('home_view'))
 
 @app.route('/rss/<lang>')
 def view_feed(lang):

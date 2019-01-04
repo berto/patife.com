@@ -14,7 +14,37 @@ body {
     color: #454545;
 }
 
-/* Obsessive compulsive behaviour: Nobody touch the borders! */
+.nav {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    right: 0;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+
+.content {
+    overflow-y: scroll;
+    position: fixed;
+    width: calc( 100% - 300px );
+    margin-left: 300px;
+    top: 0;
+    height: 100vh;
+}
+
+.index {
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+}
+
 .page {
     margin: auto;
     padding-top: 2em;
@@ -22,36 +52,20 @@ body {
     padding-left: 1.2em;
     padding-right: 1.2em;
     max-width: 760px;
-    font-size: 1.15rem;
-    line-height: 1.6rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: serif;
+
 }
 
-/* MAIN STRUCTURE */
-/* This is an ID because we only use it once and specifically*/
-#header {
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 1.3rem;
-}
-
-#navigation {
-    width: 100%;
-    display: inline-block;
-}
-/* inside the header */
 #title{
     float: left;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    color: #777777;
 }
 
 #meta{
     float: right;
-}
-
-.entries{
-    float: left;
-    display: inline-block;  /* because child elements float, we that the parent .page takes them into account */
-    width: 100%;
 }
 
 /* ENTRIES */
@@ -131,6 +145,25 @@ ul{
     color: rgb(38, 38, 38);
 }
 
+.index a:link {
+    text-decoration: none;
+    color: rgb(38, 38, 38);
+}
+
+.index a:hover{
+    text-decoration: underline;
+    color: rgb(38, 38, 38);
+}
+
+.index a:visited{
+    text-decoration: underline;
+    color: rgb(38, 38, 38);
+}
+
+.flash{
+    color: red;
+}
+
 a:link {
     text-decoration: none;
 }
@@ -162,16 +195,17 @@ table, th, td {
   vertical-align: top;
 }
 
-/* Default behaviour is mobile */
-/*@media (min-width: 63em) {
-    .en {
-        width: calc(48% - 15px);
-        margin-right: calc(15px + 2%);
-        margin-bottom: 0px;
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 850px) {
+    .nav {
+        position: static;
+        width: 100%;
+        height: auto;
     }
-
-    .pt {
-        width: calc(48% - 15px);
-        margin-left: calc(15px + 2%);
+    .content {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
-}*/
+}

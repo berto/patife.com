@@ -1,4 +1,4 @@
-{% extends "layout-v2.html" %}
+{% extends "layout.html" %}
 {% block index %}
     {% for category in categories %}
         <div class="entry">
@@ -15,19 +15,13 @@
                 </ul>
             </div>
         </div>
-    {% else %}
-        <div class="entry">
-            <div class="entry_title">Nothing to show here</div>
-        </div>
     {% endfor %}
 {% endblock %}
 
 {% block body %}
     <div class="entry">
-        <div class="entry_title">{{ entry.title }}{% if session.logged_in %} (<a href=/entries/{{entry.id}}/edit>edit</a>){% endif %}</div>
-        <div class="entry_body">{{ entry.html|safe }}</div>
-        <div class="entry_footer">
-            Created on {{ entry.date_created.strftime('%d %b %Y') }}. Updated on {{ entry.date_updated.strftime('%d %b %Y') }}
-        </div>
+        <div class="entry_title">Welcome{% if session.logged_in %} (<a href=/entries/{{entry.id}}/edit>edit</a>){% endif %}</div>
+        <div class="entry_body">try try try</div>
+        <div class="entry_footer"></div>
     </div>
 {% endblock %}
