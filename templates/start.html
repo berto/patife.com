@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block index %}
     {% for category in categories %}
-        <div class="entry">
+        <div class="index-list">
             <div class="category">{{ category.title }}{% if session.logged_in %} (<a href=/categories/{{category.id}}/edit>edit</a>){% endif %}</div>
             <div class="entry_body">
                 <ul>
