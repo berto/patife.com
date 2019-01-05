@@ -203,7 +203,7 @@ def update_entry():
     db.session.add(entry)
     db.session.commit()
     flash('Entry was successfully updated')
-    return redirect(url_for('view_entry(id)'))
+    return redirect(url_for('home_view'))
 
 
 @app.route('/entries/delete', methods=['POST'])
