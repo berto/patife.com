@@ -9,7 +9,7 @@
                         <li>
                             <a href=/entries/{{ entry.id }}>{{ entry.title }}</a>
                             {% if (current_time - entry.date_created).days <=30 %} <span class="new">New</span> {% endif %}
-                            {% if (current_time - entry.date_updated).days <=30 and ( entry.date_updated > entry.date_created ) %} <span class="update">Updated</span> {% endif %}
+                            {% if (current_time - entry.date_updated).days <=30 and ( entry.date_updated > entry.date_created ) %} <span class="update">Edited</span> {% endif %}
                         </li>
                     {% endfor %}
                 </ul>
