@@ -13,15 +13,17 @@
         <div class="content">
             <div class="page">
                 <div id="title"><a href="/">Patife.com</a></div>
-                <div id="meta">
-                  <a href="/rss/en">RSS</a> {% if session.logged_in %} · <a href="{{ url_for('logout') }}">Log out</a>{% endif %}
-                </div>
                 {% block body %}{% endblock %}
             </div>
         </div>
         <div class="nav">
             <div class="index">
                 {% block index %}{% endblock %}
+                <hr color="#EBEBEB" width="150px">
+                <div id="meta">
+                     · <a href="/rss/en">RSS</a> ·{% if session.logged_in %} <a href="{{ url_for('logout') }}">Log out</a> ·{% endif %}</br>
+                     Copyright © 2014-2019
+                </div>
             </div>
         </div>
     </body>
